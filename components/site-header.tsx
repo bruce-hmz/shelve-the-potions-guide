@@ -4,6 +4,7 @@ import { SiteSearch } from "@/components/site-search";
 
 const navItems = [
   { href: "/walkthrough/", label: "Walkthrough" },
+  { href: "/help/abilities-and-hints/", label: "Help" },
   { href: "/puzzles/clock-puzzle/", label: "Clock" },
   { href: "/puzzles/color-puzzle/", label: "Color" },
   { href: "/puzzles/chess-pieces/", label: "Chess" },

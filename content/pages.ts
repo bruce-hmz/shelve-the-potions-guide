@@ -58,4 +58,28 @@ export const guidePages: GuidePage[] = [
     eyebrow: "Puzzle guide",
     status: "Needs in-game check",
   },
+  {
+    title: "Shelve the Potions! Abilities & Hints",
+    shortTitle: "Abilities & hints",
+    href: "/help/abilities-and-hints/",
+    description:
+      "How the magical cat hint system works: locate missing potions, highlight clues, or reveal part of the answer.",
+    image: "/img/hint-cat-960.webp",
+    imageAlt:
+      "The magical cat hint menu offering three tiers of help in Shelve the Potions!",
+    eyebrow: "Help guide",
+    status: "Research ready",
+  },
+  {
+    title: "Shelve the Potions! Achievements Guide",
+    shortTitle: "Achievements",
+    href: "/help/achievements/",
+    description:
+      "All 24 achievements with real unlock percentages and how each one is earned, including the no-abilities run.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt:
+      "A wide view of the potion workshop used in the achievements overview.",
+    eyebrow: "Progress checklist",
+    status: "Research ready",
+  },
 ];

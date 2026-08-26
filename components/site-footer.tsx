@@ -15,6 +15,8 @@ export function SiteFooter() {
         <nav aria-label="Footer navigation">
           <Link href="/">Home</Link>
           <Link href="/walkthrough/">Walkthrough</Link>
+          <Link href="/help/abilities-and-hints/">Abilities &amp; Hints</Link>
+          <Link href="/help/achievements/">Achievements</Link>
           <a href={site.steamUrl} target="_blank" rel="noreferrer">
             Official Steam page <ExternalIcon />
           </a>

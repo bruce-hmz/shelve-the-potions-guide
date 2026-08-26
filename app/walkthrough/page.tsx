@@ -47,7 +47,7 @@ export default function WalkthroughPage() {
               </p>
               <div className="coverage-note">
                 <strong>Current coverage</strong>
-                <span>3 standalone puzzle intents · exact answers remain provisional</span>
+                <span>3 puzzle guides · abilities & hint system · full achievement checklist</span>
               </div>
             </div>
             <figure className="listing-hero-image">

@@ -10,10 +10,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/puzzles/clock-puzzle/",
     "/puzzles/color-puzzle/",
     "/puzzles/chess-pieces/",
+    "/help/abilities-and-hints/",
+    "/help/achievements/",
   ];
 
   return paths.map((path) => ({
     url: new URL(path, site.url).toString(),
-    lastModified: "2026-08-26",
+    lastModified: "2026-08-27",
   }));
 }
