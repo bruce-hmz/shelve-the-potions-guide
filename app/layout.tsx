@@ -63,6 +63,9 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   robots: { index: true, follow: true },
+  verification: {
+    google: "1HF3EOrvGKZGwFKzB7uZw1ISlC36_Bn9RR0haS-uuN8",
+  },
 };
 
 export const viewport: Viewport = {
