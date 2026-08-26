@@ -2,8 +2,8 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.shelvethepotions.guide" }],
-      "destination": "https://shelvethepotions.guide/:path*",
+      "has": [{ "type": "host", "value": "www.shelvethepotions.wiki" }],
+      "destination": "https://shelvethepotions.wiki/:path*",
       "permanent": true
     }
   ],
