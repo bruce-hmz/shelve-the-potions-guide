@@ -1,0 +1,90 @@
+{
+  "captured_at": "2026-08-26",
+  "source": {
+    "type": "official_platform",
+    "publisher": "Knight Owl Games / Steam",
+    "page": "https://store.steampowered.com/app/4928820/Shelve_the_Potions/",
+    "app_id": 4928820
+  },
+  "rights_note": "Official Steam store media used editorially for the independent guide prototype. Confirm publisher media-use guidelines before production launch.",
+  "game_version": "Release build; numeric version not published",
+  "assets": [
+    {
+      "file": "hero-workshop-1600.webp",
+      "source_file": "steam-shot-08.jpg",
+      "role": "homepage hero",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "file": "hero-workshop-960.webp",
+      "source_file": "steam-shot-08.jpg",
+      "role": "responsive hero and walkthrough card",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "file": "clock-puzzle-640.webp",
+      "source_file": "steam-shot-03.jpg",
+      "role": "clock puzzle card",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "file": "clock-puzzle-1200.webp",
+      "source_file": "steam-shot-03.jpg",
+      "role": "clock puzzle article hero",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "file": "color-puzzle-640.webp",
+      "source_file": "steam-shot-05.jpg",
+      "role": "color puzzle card",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "file": "color-puzzle-1200.webp",
+      "source_file": "steam-shot-05.jpg",
+      "role": "color puzzle article hero",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "file": "chess-pieces-640.webp",
+      "source_file": "steam-shot-06.jpg",
+      "role": "chess pieces puzzle card; editorial crop focuses the visible black piece",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "file": "chess-workshop-1200.webp",
+      "source_file": "steam-shot-06.jpg",
+      "role": "chess pieces article context image",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "file": "hint-cat-960.webp",
+      "source_file": "steam-shot-04.jpg",
+      "role": "hint-system explanation",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "file": "gameplay-trailer-poster.webp",
+      "source_file": "gameplay-trailer-poster.jpg",
+      "role": "official trailer link",
+      "width": 600,
+      "height": 337
+    },
+    {
+      "file": "og-cover.jpg",
+      "source_file": "steam-shot-08.jpg",
+      "role": "Open Graph social image",
+      "width": 1200,
+      "height": 630
+    }
+  ]
+}
