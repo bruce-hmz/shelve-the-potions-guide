@@ -10,6 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/puzzles/clock-puzzle/",
     "/puzzles/color-puzzle/",
     "/puzzles/chess-pieces/",
+    "/puzzles/greek-letters/",
+    "/puzzles/moon-orientation/",
+    "/puzzles/flower-ordering/",
     "/help/abilities-and-hints/",
     "/help/achievements/",
   ];

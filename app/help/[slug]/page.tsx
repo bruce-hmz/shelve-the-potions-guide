@@ -108,6 +108,7 @@ export default async function HelpPage({ params }: PageProps) {
                   <a href="#three-levels">Three help levels</a>
                   <a href="#when-to-use">When to ask</a>
                   <a href="#cooldown">Costs and limits</a>
+                  <a href="#steam-deck">Steam Deck controls</a>
                   <a href="#achievement-link">Achievement impact</a>
                 </>
               )}
@@ -270,6 +271,19 @@ export default async function HelpPage({ params }: PageProps) {
                   <h2>Costs, cooldowns, penalties</h2>
                   <p>
                     Nothing official suggests cat hints have a cost, cooldown, or penalty. Steam&apos;s global stats show about <strong>29.5%</strong> of players use a hint at least once (<em>&quot;Hooman needs help :)&quot;</em>), which is well below the completion rate of most board achievements — most players either solve without hints or do not realise the system exists.
+                  </p>
+                </section>
+
+                <section id="steam-deck" className="article-section">
+                  <h2>Steam Deck: d-pad remap workaround</h2>
+                  <p>
+                    On Steam Deck the d-pad down button is hard-wired to two actions at once — highlight a shelf and show part of a potion answer. The built-in remap UI only accepts keyboard and mouse input, so you cannot reassign it from controller mode alone.
+                  </p>
+                  <p>
+                    The developer&apos;s suggested fix on Discord is to move the three ability keys further apart — from the default 1-2-3 to something like I-O-P. Multiple players also recommend force-killing the game after an accidental press to undo a wrong reveal, though that is a last resort because it rolls back recent progress.
+                  </p>
+                  <p className="source-note">
+                    Source: Steam Community discussion thread "I wish there to be a lock for abilities", plus official developer replies. Rebinding has not been retested by us; treat as community-verified workaround.
                   </p>
                 </section>
 

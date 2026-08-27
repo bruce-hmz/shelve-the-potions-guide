@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Shelve the Potions! Walkthrough — Puzzle Solutions",
   description:
-    "A spoiler-controlled Shelve the Potions walkthrough covering the Clock, Color, and Chess Pieces puzzles with visible verification status.",
+    "A spoiler-controlled Shelve the Potions walkthrough covering Clock, Color, Chess Pieces, Greek Letters, Moon Orientation, and Flower Ordering puzzles with visible verification status.",
   alternates: { canonical: "/walkthrough/" },
   openGraph: {
     title: "Shelve the Potions! Walkthrough — Puzzle Solutions",
@@ -47,7 +47,7 @@ export default function WalkthroughPage() {
               </p>
               <div className="coverage-note">
                 <strong>Current coverage</strong>
-                <span>3 puzzle guides · abilities & hint system · full achievement checklist</span>
+                <span>6 puzzle guides · abilities & hint system · full achievement checklist</span>
               </div>
             </div>
             <figure className="listing-hero-image">

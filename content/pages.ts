@@ -59,6 +59,40 @@ export const guidePages: GuidePage[] = [
     status: "Needs in-game check",
   },
   {
+    title: "Shelve the Potions! Greek Letters Puzzle",
+    shortTitle: "Greek letters",
+    href: "/puzzles/greek-letters/",
+    description:
+      "Steam players keep asking where this clue lives. The answer is a set of four storybooks behind the desk.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt:
+      "Wide view of the potion workshop used for the Greek letters puzzle overview.",
+    eyebrow: "Puzzle guide",
+    status: "Research ready",
+  },
+  {
+    title: "Shelve the Potions! Moon Orientation Puzzle",
+    shortTitle: "Moon orientation",
+    href: "/puzzles/moon-orientation/",
+    description:
+      "The telescope clue changes faster than most players can track. Includes a community-recommended workaround.",
+    image: "/img/steam-shot-03.jpg",
+    imageAlt: "Workshop shelf used in the moon orientation guide cover.",
+    eyebrow: "Puzzle guide",
+    status: "Needs in-game check",
+  },
+  {
+    title: "Shelve the Potions! Flower Ordering Puzzle",
+    shortTitle: "Flower ordering",
+    href: "/puzzles/flower-ordering/",
+    description:
+      "Color plus leaf count is the two-part key. Even after receiving the answer hint some players still reject the shelf.",
+    image: "/img/steam-shot-05.jpg",
+    imageAlt: "Workshop section used in the flower ordering guide cover.",
+    eyebrow: "Puzzle guide",
+    status: "Needs in-game check",
+  },
+  {
     title: "Shelve the Potions! Abilities & Hints",
     shortTitle: "Abilities & hints",
     href: "/help/abilities-and-hints/",

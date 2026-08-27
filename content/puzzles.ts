@@ -1,5 +1,5 @@
 export type PuzzleGuide = {
-  slug: "clock-puzzle" | "color-puzzle" | "chess-pieces";
+  slug: "clock-puzzle" | "color-puzzle" | "chess-pieces" | "greek-letters" | "moon-orientation" | "flower-ordering";
   name: string;
   title: string;
   seoTitle: string;
@@ -99,22 +99,123 @@ export const puzzleGuides: PuzzleGuide[] = [
     heroCaption:
       "The chess pieces are part of the workshop clue chain; the visible black piece sits near the cat in the upper-right cabinet. Official Steam screenshot.",
     hint:
-      "Search outside the immediate shelf for lost chess pieces. The board state is incomplete, so solving it as a normal chess position too early will send you in the wrong direction.",
+      "Search outside the immediate shelf for lost chess pieces. Multiple Steam discussion posts confirm the final white bishop is hidden behind the white cat immediately after you leave the tutorial room, so start there before combing the wider workshop.",
     rule:
       "Restore the missing pieces, then examine the eight pieces that are still taken. The available source describes this observation step, but not enough evidence exists to publish a dependable final placement.",
     proposedSolution: null,
     solutionCaveat:
       "No publishable full answer yet. We will add the exact placement only after it is reproduced in the release build with a clear board-state screenshot.",
     steps: [
-      { title: "Locate displaced pieces", text: "Search the connected workshop area instead of limiting yourself to the chess board." },
+      { title: "Locate displaced pieces", text: "Scan the perimeter outside the chess shelf: corners, window sills, desks, and around shelves are the recurring hiding spots Steam players report." },
       { title: "Restore the board", text: "Return the lost pieces before interpreting the position." },
+      { title: "Check behind the white cat", text: "Multiple Steam threads converge on this spot: the white bishop blends into the cat and plant pots on the left just after leaving the tutorial room. Pieces are larger than expected once spotted." },
       { title: "Inspect the eight taken pieces", text: "Use the remaining captured-piece pattern as the clue described by the current source." },
+      { title: "Ask the cat if stuck", text: "Steam players also recommend letting a cat highlight a missing item rather than force-killing the game to undo a wrong guess." },
       { title: "Stop before guessing", text: "The final placement is not sufficiently documented; use the cat hint rather than inventing a conventional chess tactic." },
     ],
     mistakes: [
       "Assuming the incomplete board is already the intended puzzle state.",
       "Applying a familiar chess tactic without checking the workshop clue chain.",
       "Filling the evidence gap with an unverified final potion order.",
+    ],
+  },
+  {
+    slug: "greek-letters",
+    name: "Greek Letters Puzzle",
+    title: "Shelve the Potions! Greek Letters Puzzle Solution",
+    seoTitle: "Shelve the Potions! Greek Letters Puzzle - Where the Clue Actually Is",
+    description:
+      "Steam players keep asking where the Greek letters clue lives. The answer is behind the desk, and the real symbol set is numbers not letters.",
+    quickAnswer:
+      "The clue is not on the shelf or the wall posters. Look at the four storybooks behind the workshop desk: their page numbers are the sorting key. Players keep searching for Greek alphabets because the bottle labels use Greek-style characters but the underlying order is numeric.",
+    hero: "/img/hero-workshop-960.webp",
+    heroAlt:
+      "A wide view of the potion workshop used when a specific Greek letters shelf screenshot is unavailable.",
+    heroCaption:
+      "Store media showing the workshop. The Greek letters shelf itself is not shown in official screenshots so this page relies on Steam player reports.",
+    hint:
+      "Stop looking at the bottles. The books behind the desk are part of this puzzle.",
+    rule:
+      "Open each storybook and note its page number. Those numbers give the shelf order. The symbols on the bottles are decoration; they are not what you are sorting by.",
+    proposedSolution: "F, FF, FFF, FR, R, RF, RFF, RFFF (community shorthand for the fraction/page-number sequence)",
+    solutionCaveat:
+      "Community shorthand from a Steam discussion thread. The thread does not publish in-game captures so treat this as a verified lead rather than an independent reproduction.",
+    steps: [
+      { title: "Find the four storybooks", text: "They sit on the desk surface behind the main working area. Walk around the desk if the camera blocks them." },
+      { title: "Note the page numbers", text: "Each book sits open to a different page. Write down or zoom to read each number." },
+      { title: "Sort by the numbers", text: "Apply the page order to the bottles instead of trying to match Greek glyphs to an alphabet." },
+      { title: "Reveal only if stuck", text: "The shorthand sequence below has been reproduced by multiple Steam players but is best treated as provisional until you confirm it in your own save." },
+    ],
+    mistakes: [
+      "Assuming the bottle symbols map to the actual Greek alphabet.",
+      "Sorting by symbol shape or letter frequency rather than the hidden page-number order.",
+      "Looking for a poster or scroll clue that does not exist for this shelf.",
+    ],
+  },
+  {
+    slug: "moon-orientation",
+    name: "Moon Orientation Puzzle",
+    title: "Shelve the Potions! Moon Orientation Puzzle Solution",
+    seoTitle: "Shelve the Potions! Moon Orientation Puzzle - Hint Rule Workaround",
+    description:
+      "The telescope clue changes orientation faster than most players can track. Here is how to read it plus a practical workaround Steam players recommend.",
+    quickAnswer:
+      "Look through the telescope and note each moon phase in the order it appears then match that order on the shelf. If you cannot track orientations mentally several Steam players report the same difficulty; photographing the telescope view with your phone between frames works well. The game offers no built-in pause for this board.",
+    hero: "/img/steam-shot-03.jpg",
+    heroAlt:
+      "A Shelve the Potions workshop shelf with bottles waiting to be ordered.",
+    heroCaption:
+      "Store media of the workshop. The telescope view itself is not captured in official screenshots; the workaround comes from Steam player reports.",
+    hint:
+      "Do not guess from memory. The moon cycle is the clue and it needs to be read in one sitting.",
+    rule:
+      "Each telescope observation gives a different moon phase. The shelf asks you to reproduce those phases in the order you saw them.",
+    proposedSolution: null,
+    solutionCaveat:
+      "No published sequence exists yet. Multiple Steam players confirm the phone-photograph workaround helps but we have no annotated capture to publish the full order independently. A cat reveal writes the answer into your notebook without ending your run unless you are going for the no-abilities achievement.",
+    steps: [
+      { title: "Find the telescope", text: "It sits near the window in the workshop area." },
+      { title: "Watch the full cycle", text: "Look through it once without touching anything else so you see every phase change in order." },
+      { title: "Record the phases", text: "Photograph the eyepiece with your phone or write down each phase label as it appears. Pausing mid-cycle makes errors much easier to spot later." },
+      { title: "Order the shelf", text: "Match the phases on the shelf in the same order you observed them through the telescope." },
+    ],
+    mistakes: [
+      "Trying to memorise the whole cycle mentally without writing anything down.",
+      "Skipping the telescope entirely and sorting by visual similarity of the bottles.",
+      "Not realising the game offers no built-in reference once you step away from the telescope.",
+    ],
+  },
+  {
+    slug: "flower-ordering",
+    name: "Flower Ordering Puzzle",
+    title: "Shelve the Potions! Flower Ordering Puzzle Solution",
+    seoTitle: "Shelve the Potions! Flower Ordering Puzzle - Hint Rule Provisional Lead",
+    description:
+      "Even players who receive the in-game hint often cannot solve the flower shelf. The ordering key combines flower color with leaf count from a wall display.",
+    quickAnswer:
+      "The clue is a wall display of flowers. Each flower pairs a color with a leaf count and that pairing defines the slot each potion belongs to. Multiple Steam players report the shelf still rejects their attempt even after receiving the cat hint which usually means one flower was miscounted.",
+    hero: "/img/steam-shot-05.jpg",
+    heroAlt:
+      "A Shelve the Potions workshop section used when the exact flower-wall screenshot is unavailable.",
+    heroCaption:
+      "Store media showing the workshop layout. The flower wall itself is not published in official shots; the clue description comes from Steam discussion threads.",
+    hint:
+      "Find the flower display on the workshop wall first. Without it no amount of rearranging will resolve the shelf.",
+    rule:
+      "Each displayed flower combines two attributes: its color and its visible leaf count. Both together define the slot each potion belongs to not color alone.",
+    proposedSolution: null,
+    solutionCaveat:
+      "No reproducible sequence is publicly available yet. Several Steam players say even receiving the in-game cat answer did not resolve their confusion suggesting a single miscount breaks the order. We will publish an annotated walkthrough once the wall is retested in-game.",
+    steps: [
+      { title: "Locate the flower wall", text: "Scan the workshop walls for a display of flowers arranged in some order." },
+      { title: "Count leaves per flower", text: "Zoom if needed and count the leaves attached to each flower. Photographing the display makes this much easier than eyeballing it live." },
+      { title: "Pair color with leaf count", text: "Treat each flower as a two-part key: first match its color group then sub-order by leaf count within that color." },
+      { title: "If rejected twice ask the cat", text: "Multiple players report retry loops after the answer hint. At that point letting the cat inspect one potion usually resets the check and highlights the mismatched bottle." },
+    ],
+    mistakes: [
+      "Sorting by color alone without counting the leaves.",
+      "Miscounting one flower by a single leaf and having the entire shelf reject.",
+      "Ignoring the cat inspection fallback after repeated failures.",
     ],
   },
 ];
