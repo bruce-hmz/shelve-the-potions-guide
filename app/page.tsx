@@ -23,6 +23,43 @@ const websiteJsonLd = {
   description: site.description,
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Does Shelve the Potions! have co-op or multiplayer?",
+      acceptedAnswer: { "@type": "Answer", text: "No. The developer's FAQ answers \"Sadly, no\" for multiplayer, and no additional levels are planned either." },
+    },
+    {
+      "@type": "Question",
+      name: "Does Shelve the Potions! have cloud saves?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. The game supports Steam Cloud and autosaves every 2 minutes, per the developer's FAQ." },
+    },
+    {
+      "@type": "Question",
+      name: "Was AI used to make Shelve the Potions!?",
+      acceptedAnswer: { "@type": "Answer", text: "No. The developer states that AI was not used at any stage of the game's development." },
+    },
+    {
+      "@type": "Question",
+      name: "How many puzzles and potions are in Shelve the Potions!?",
+      acceptedAnswer: { "@type": "Answer", text: "The official listing counts 25+ handcrafted shelving puzzles and more than 2,000 unique potions to organize." },
+    },
+    {
+      "@type": "Question",
+      name: "How long does Shelve the Potions! take to finish?",
+      acceptedAnswer: { "@type": "Answer", text: "Roughly 3.5 to 4 hours based on full community playthrough videos; expect longer at a relaxed sorting pace. No official figure exists." },
+    },
+    {
+      "@type": "Question",
+      name: "Will Shelve the Potions! get more updates?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes for bug patches and quality-of-life updates if needed — the v1.0.11 patch that disables magic abilities is one example — but no additional levels or multiplayer are planned." },
+    },
+  ],
+};
+
 export default function HomePage() {
   const [walkthrough, ...puzzles] = guidePages;
 
@@ -30,7 +67,7 @@ export default function HomePage() {
     <main id="main-content">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([websiteJsonLd, gameJsonLd]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([websiteJsonLd, gameJsonLd, faqJsonLd]) }}
       />
 
       <section className="hero section">
@@ -182,6 +219,28 @@ export default function HomePage() {
               <span>Watch on Steam <ExternalIcon /></span>
             </span>
           </a>
+        </div>
+      </section>
+
+      <section className="section section--ruled" aria-labelledby="faq-heading">
+        <div className="container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow"><span /> Quick answers</p>
+              <h2 id="faq-heading">Shelve the Potions! FAQ</h2>
+            </div>
+            <p>
+              The questions players actually search for, answered from the developer&apos;s own FAQ and store listing — no guesswork.
+            </p>
+          </div>
+          <ul className="check-list">
+            <li><CheckIcon /><span><strong>Co-op or multiplayer?</strong> No — the developer&apos;s FAQ answers &quot;sadly, no&quot;, and no additional levels are planned either.</span></li>
+            <li><CheckIcon /><span><strong>Cloud saves?</strong> Yes: Steam Cloud support with an autosave every 2 minutes.</span></li>
+            <li><CheckIcon /><span><strong>Was AI used to make it?</strong> No — the developer states AI was not used at any stage of development.</span></li>
+            <li><CheckIcon /><span><strong>How big is the game?</strong> 25+ handcrafted shelving puzzles and 2,000+ unique potions, per the official listing.</span></li>
+            <li><CheckIcon /><span><strong>How long to finish?</strong> Roughly 3.5–4 hours based on full community playthroughs — expect longer at a relaxed pace (estimate, no official figure).</span></li>
+            <li><CheckIcon /><span><strong>More updates coming?</strong> Bug patches and QOL updates, yes — the v1.0.11 disable-abilities toggle is one. More levels or multiplayer, no.</span></li>
+          </ul>
         </div>
       </section>
 

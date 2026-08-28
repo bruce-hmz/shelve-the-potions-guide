@@ -23,6 +23,29 @@ export const guidePages: GuidePage[] = [
     status: "Research ready",
   },
   {
+    title: "Shelve the Potions! All Puzzle Solutions",
+    shortTitle: "All solutions",
+    href: "/walkthrough/all-puzzle-solutions/",
+    description:
+      "Every puzzle board in one place, grouped by how it is solved, with our verification status and guide links for each.",
+    image: "/img/og-cover.jpg",
+    imageAlt: "Cover image for the all-puzzle-solutions hub.",
+    eyebrow: "Puzzle hub",
+    status: "Research ready",
+  },
+  {
+    title: "Shelve the Potions! First Room Walkthrough",
+    shortTitle: "First room",
+    href: "/walkthrough/first-room/",
+    description:
+      "Just finished the movement tutorial? The checklist on the left is your real objective list — here is how the first room works.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt:
+      "A wide view of the potion workshop used for the first room walkthrough cover.",
+    eyebrow: "Beginner walkthrough",
+    status: "Research ready",
+  },
+  {
     title: "Clock Puzzle",
     shortTitle: "Clock puzzle",
     href: "/puzzles/clock-puzzle/",
@@ -63,12 +86,78 @@ export const guidePages: GuidePage[] = [
     shortTitle: "Greek letters",
     href: "/puzzles/greek-letters/",
     description:
-      "Steam players keep asking where this clue lives. The answer is a set of four storybooks behind the desk.",
+      "The clue is drawn on the corks of vials sitting on the tables — not on the shelf, and not in the storybooks behind the desk.",
     image: "/img/hero-workshop-960.webp",
     imageAlt:
       "Wide view of the potion workshop used for the Greek letters puzzle overview.",
     eyebrow: "Puzzle guide",
     status: "Research ready",
+  },
+  {
+    title: "Shelve the Potions! Solitaire Cards Puzzle",
+    shortTitle: "Solitaire cards",
+    href: "/puzzles/solitaire-cards/",
+    description:
+      "A pattern-copy board with a card display as the answer key — and why an unpatched build makes it look unreadable.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt: "Wide view of the potion workshop used for the solitaire cards puzzle overview.",
+    eyebrow: "Puzzle guide",
+    status: "Needs in-game check",
+  },
+  {
+    title: "Shelve the Potions! Compass Puzzle",
+    shortTitle: "Compass",
+    href: "/puzzles/compass/",
+    description:
+      "Find the compass-rose clue, read the direction sequence, and check the community-reported order — labeled as a single-source lead.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt: "Wide view of the potion workshop used for the compass puzzle overview.",
+    eyebrow: "Puzzle guide",
+    status: "Needs in-game check",
+  },
+  {
+    title: "Shelve the Potions! Runes Puzzle (Four Storybooks)",
+    shortTitle: "Runes",
+    href: "/puzzles/runes-books/",
+    description:
+      "The desk's four storybooks hold the page-number symbols that order the rune bottles — and why they are not the Greek letters clue.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt: "Wide view of the potion workshop used for the runes puzzle overview.",
+    eyebrow: "Puzzle guide",
+    status: "Needs in-game check",
+  },
+  {
+    title: "Shelve the Potions! Weather Forecast Puzzle",
+    shortTitle: "Weather",
+    href: "/puzzles/weather-forecast/",
+    description:
+      "The forecast display is the answer key — transcribe its icon sequence. Full order deliberately unpublished until verified.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt: "Wide view of the potion workshop used for the weather forecast puzzle overview.",
+    eyebrow: "Puzzle guide",
+    status: "Needs in-game check",
+  },
+  {
+    title: "Shelve the Potions! Scales, Harp & Candelabra Puzzles",
+    shortTitle: "Numbers trio",
+    href: "/puzzles/scales-numbers/",
+    description:
+      "Three boards, one trick: reveal the hidden number readout first, then sort lowest to highest.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt: "Wide view of the potion workshop used for the reveal-the-numbers puzzles overview.",
+    eyebrow: "Puzzle guide",
+    status: "Needs in-game check",
+  },
+  {
+    title: "Shelve the Potions! Number of Corners Puzzle",
+    shortTitle: "Shapes",
+    href: "/puzzles/number-of-corners/",
+    description:
+      "Count corners, sort ascending — no clue object, just a counting method that avoids the miscounts that reject the shelf.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt: "Wide view of the potion workshop used for the number of corners puzzle overview.",
+    eyebrow: "Puzzle guide",
+    status: "Needs in-game check",
   },
   {
     title: "Shelve the Potions! Moon Orientation Puzzle",
@@ -91,6 +180,28 @@ export const guidePages: GuidePage[] = [
     imageAlt: "Workshop section used in the flower ordering guide cover.",
     eyebrow: "Puzzle guide",
     status: "Needs in-game check",
+  },
+  {
+    title: "No Magical Abilities — Achievement Run Guide",
+    shortTitle: "No-abilities run",
+    href: "/help/no-abilities-run/",
+    description:
+      "The run plan for the rarest achievement: the v1.0.11 toggle, what counts as an ability, what stays safe, and how to unstick yourself mid-run.",
+    image: "/img/hint-cat-960.webp",
+    imageAlt: "The magical cat hint menu used for the no-abilities run guide cover.",
+    eyebrow: "Achievement guide",
+    status: "Research ready",
+  },
+  {
+    title: "Lost a Potion? Respawn Missing Bottles",
+    shortTitle: "Missing potions",
+    href: "/help/missing-potions/",
+    description:
+      "The pause menu respawns every unshelved potion back to its spawn point — plus where bottles hide and how to make a cat point at the one you lack.",
+    image: "/img/hint-cat-960.webp",
+    imageAlt: "The magical cat hint menu used for the missing potions guide cover.",
+    eyebrow: "Help guide",
+    status: "Research ready",
   },
   {
     title: "Shelve the Potions! Abilities & Hints",

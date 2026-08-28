@@ -1,5 +1,5 @@
 export type PuzzleGuide = {
-  slug: "clock-puzzle" | "color-puzzle" | "chess-pieces" | "greek-letters" | "moon-orientation" | "flower-ordering";
+  slug: "clock-puzzle" | "color-puzzle" | "chess-pieces" | "greek-letters" | "moon-orientation" | "flower-ordering" | "solitaire-cards" | "compass" | "runes-books" | "weather-forecast" | "scales-numbers" | "number-of-corners";
   name: string;
   title: string;
   seoTitle: string;
@@ -21,11 +21,11 @@ export const puzzleGuides: PuzzleGuide[] = [
     slug: "clock-puzzle",
     name: "Clock Puzzle",
     title: "Shelve the Potions! Clock Puzzle Solution",
-    seoTitle: "Shelve the Potions! Clock Puzzle Solution — Hint & Order",
+    seoTitle: "Shelve the Potions! Clock Puzzle Solution — Hint, Order & Clock Hand Location",
     description:
-      "Solve the Shelve the Potions clock puzzle with a spoiler-light hint, the ordering rule, and a clearly labeled provisional time sequence.",
+      "Solve the Shelve the Potions clock puzzle: where the second long clock hand hides, a spoiler-light hint, the ordering rule, and a clearly labeled provisional time sequence.",
     quickAnswer:
-      "Restore the missing clock pieces before trying to order the shelf. The times are the clue; the proposed sequence below comes from one community guide and still needs release-build reproduction.",
+      "Restore the missing clock pieces before trying to order the shelf. Can't find the second long clock hand? Hold a time potion and ask a cat to show all the needed items — the developer's own tip — or check upright against the room's pillars first. The times are the clue; the proposed sequence below comes from one community guide and still needs release-build reproduction.",
     hero: "/img/clock-puzzle-1200.webp",
     heroAlt:
       "A clock-themed potion shelf with numbered bottles and a large clock face in Shelve the Potions.",
@@ -41,13 +41,15 @@ export const puzzleGuides: PuzzleGuide[] = [
       "Community-guide lead only. We have not reproduced this eight-time order in the release build, so use it as a check rather than a guaranteed answer.",
     steps: [
       { title: "Find the missing pieces", text: "Search nearby shelves and clue areas before changing the clock shelf." },
+      { title: "Can't find the second long clock hand?", text: "You are not alone — this exact question came up on the Steam forum. The developer's tip: hold a time potion and ask the Cat to show all the needed items. One player also recalls the hand standing tall against one of the room's pillars, so check there first before sweeping the whole workshop." },
       { title: "Restore the clock", text: "Put the displaced clock pieces back so every required time can be read." },
       { title: "Write down the times", text: "Capture the complete sequence before moving potions; guessing while sorting makes errors harder to spot." },
-      { title: "Check the proposed order", text: "Reveal the sequence below only after you have tried to derive the rule yourself." },
+      { title: "Check the proposed order", text: "Reveal the sequence below only after you have tried to derive the rule yourself. Finishing this board also unlocks the \"Proud Grandfather\" achievement." },
     ],
     mistakes: [
       "Assuming the bottles simply run from the earliest time to the latest.",
       "Trying to finish the shelf before every missing clock piece is restored.",
+      "Rescanning the entire room by eye for the clock hand instead of holding a time potion and letting the cat mark the parts.",
       "Treating the provisional community sequence as release-build verified.",
     ],
   },
@@ -76,10 +78,12 @@ export const puzzleGuides: PuzzleGuide[] = [
       { title: "Find the reference board", text: "Use the chart beside the shelf as the primary clue instead of relying on bottle appearance alone." },
       { title: "Return the powders", text: "A community solution lead indicates that displaced powders complete the clue setup." },
       { title: "Read the relationship", text: "Match each clue item to the corresponding color before arranging the shelf." },
+      { title: "Colors look identical?", text: "Players repeatedly flag pink vs red and white vs beige as hard to tell apart. Before fighting the shelf, check the options menu — the developer's FAQ confirms colorblind support \"plus a lot more of accessibility options\" — and lean on the chart, not your eyes, for the ambiguous pairs." },
       { title: "Check the proposed sequence", text: "Reveal the five-color lead only if your reconstructed clue still does not resolve the shelf." },
     ],
     mistakes: [
       "Sorting the colors as a conventional rainbow without checking the board.",
+      "Trusting your eyes on the pink/red and white/beige pairs that players report look nearly identical.",
       "Ignoring clue items that were moved elsewhere in the workshop.",
       "Publishing or sharing the proposed sequence without its provisional label.",
     ],
@@ -123,33 +127,34 @@ export const puzzleGuides: PuzzleGuide[] = [
     slug: "greek-letters",
     name: "Greek Letters Puzzle",
     title: "Shelve the Potions! Greek Letters Puzzle Solution",
-    seoTitle: "Shelve the Potions! Greek Letters Puzzle - Where the Clue Actually Is",
+    seoTitle: "Shelve the Potions! Greek Letters Puzzle — Where the Clue Actually Is",
     description:
-      "Steam players keep asking where the Greek letters clue lives. The answer is behind the desk, and the real symbol set is numbers not letters.",
+      "The Greek letters clue is not on the shelf: it is drawn on the corks of vials sitting on the workshop tables. Hint, rule, and the community-checked bottle order — plus the storybook mix-up to avoid.",
     quickAnswer:
-      "The clue is not on the shelf or the wall posters. Look at the four storybooks behind the workshop desk: their page numbers are the sorting key. Players keep searching for Greek alphabets because the bottle labels use Greek-style characters but the underlying order is numeric.",
+      "Scan the tables, not the shelf: small chemistry vials sitting on them carry the Greek-style symbols on their corks, and there are two sets of vials to find. The community-checked order is γ, ε, α, η, β, ζ, θ, δ. Watch out for a common mix-up — the four storybooks behind the desk belong to a different (runes) shelf, a mistake even Steam players make.",
     hero: "/img/hero-workshop-960.webp",
     heroAlt:
       "A wide view of the potion workshop used when a specific Greek letters shelf screenshot is unavailable.",
     heroCaption:
-      "Store media showing the workshop. The Greek letters shelf itself is not shown in official screenshots so this page relies on Steam player reports.",
+      "Store media showing the workshop. The vial corks themselves are not shown in official screenshots; the clue location comes from a developer-answered Steam thread.",
     hint:
-      "Stop looking at the bottles. The books behind the desk are part of this puzzle.",
+      "Stop looking at the shelf and the wall posters. Search the tables for something chemistry-related — small vials — and read their corks.",
     rule:
-      "Open each storybook and note its page number. Those numbers give the shelf order. The symbols on the bottles are decoration; they are not what you are sorting by.",
-    proposedSolution: "F, FF, FFF, FR, R, RF, RFF, RFFF (community shorthand for the fraction/page-number sequence)",
+      "Each vial's cork carries one of the Greek-style symbols, and the vials come in two sets. Reading the corks across both sets gives you the shelf order; the symbols are not sorted by their place in the Greek alphabet.",
+    proposedSolution: "γ, ε, α, η, β, ζ, θ, δ",
     solutionCaveat:
-      "Community shorthand from a Steam discussion thread. The thread does not publish in-game captures so treat this as a verified lead rather than an independent reproduction.",
+      "Community-checked order from a Steam thread where the developer also participated, and it matches independent community guides. We have not yet reproduced it in our own save, so treat it as a strong lead rather than a guaranteed answer.",
     steps: [
-      { title: "Find the four storybooks", text: "They sit on the desk surface behind the main working area. Walk around the desk if the camera blocks them." },
-      { title: "Note the page numbers", text: "Each book sits open to a different page. Write down or zoom to read each number." },
-      { title: "Sort by the numbers", text: "Apply the page order to the bottles instead of trying to match Greek glyphs to an alphabet." },
-      { title: "Reveal only if stuck", text: "The shorthand sequence below has been reproduced by multiple Steam players but is best treated as provisional until you confirm it in your own save." },
+      { title: "Scan the tables for vials", text: "The developer's own hint points at \"some item over tables around the level\", and players narrow it further: small vials related to chemistry, sitting on the tables." },
+      { title: "Read the corks", text: "Each symbol you need is drawn on a vial's cork, not on the bottles you are shelving." },
+      { title: "Find both sets", text: "Players count two sets of vials; a shelf that rejects half a correct order usually means you read only one set." },
+      { title: "Order the shelf", text: "Apply the cork order to the bottles instead of sorting the symbols as if they were the alphabet." },
+      { title: "If stuck, hold a potion and ask the cat", text: "The developer's suggested fallback: hold a Greek potion, talk to a cat, and ask it to highlight helpful objects or reveal the full solution." },
     ],
     mistakes: [
-      "Assuming the bottle symbols map to the actual Greek alphabet.",
-      "Sorting by symbol shape or letter frequency rather than the hidden page-number order.",
-      "Looking for a poster or scroll clue that does not exist for this shelf.",
+      "Sorting the symbols by their position in the Greek alphabet — the shelf rejects that order.",
+      "Using the four storybooks behind the desk: their page numbers solve the runes shelf, a different board. This mix-up happened on the Steam forum too.",
+      "Hunting for a poster or scroll clue that does not exist for this shelf.",
     ],
   },
   {
@@ -181,6 +186,7 @@ export const puzzleGuides: PuzzleGuide[] = [
     ],
     mistakes: [
       "Trying to memorise the whole cycle mentally without writing anything down.",
+      "Trusting a quick glance between near-identical phase images — players report the images look very similar; zoom in or photograph each frame instead.",
       "Skipping the telescope entirely and sorting by visual similarity of the bottles.",
       "Not realising the game offers no built-in reference once you step away from the telescope.",
     ],
@@ -216,6 +222,206 @@ export const puzzleGuides: PuzzleGuide[] = [
       "Sorting by color alone without counting the leaves.",
       "Miscounting one flower by a single leaf and having the entire shelf reject.",
       "Ignoring the cat inspection fallback after repeated failures.",
+    ],
+  },
+  {
+    slug: "solitaire-cards",
+    name: "Solitaire Cards Puzzle",
+    title: "Shelve the Potions! Solitaire Cards Puzzle",
+    seoTitle: "Shelve the Potions! Solitaire Cards Puzzle — Hint & the Readability Fix",
+    description:
+      "The solitaire card shelf is a pattern-copy board. If the cards look illegible, patch v1.0.9 specifically made this board more readable — plus a gentle hint and how to approach it.",
+    quickAnswer:
+      "This shelf is a pattern-copy board: a card display somewhere in the workshop shows the order, and the shelf asks you to reproduce it. If the cards look too small or blurry to read, update your game first — the day-one patch (v1.0.9) specifically made this board more readable. No verified card order has been published yet, and we will not guess one.",
+    hero: "/img/hero-workshop-960.webp",
+    heroAlt:
+      "A wide view of the potion workshop used when a specific solitaire cards screenshot is unavailable.",
+    heroCaption:
+      "Store media showing the workshop. The card display itself is not captured in official screenshots; the board description comes from community puzzle guides and patch notes.",
+    hint:
+      "Do not stare at the shelf. Somewhere in the workshop there is a card display laid out like a solitaire hand — finding it is the whole puzzle.",
+    rule:
+      "The card layout is the answer key: each card position maps to a bottle slot. Your job is to transcribe the pattern, not to play solitaire rules.",
+    proposedSolution: null,
+    solutionCaveat:
+      "No verified sequence is published anywhere we would cite. We will add the order only after reproducing it in the release build with a clear board-state screenshot.",
+    steps: [
+      { title: "Update the game first", text: "The day-one patch (v1.0.9) specifically \"made the cards puzzle a bit more readable\" — on the launch build this board was noticeably harder to read." },
+      { title: "Find the card display", text: "Scan the workshop for a spread of cards laid out like a solitaire hand. It is your answer key." },
+      { title: "Transcribe the pattern", text: "Note the card order position by position before touching any bottles; a phone photo of the display makes checking easier." },
+      { title: "Reproduce it on the shelf", text: "Place the bottles to match the card pattern you recorded." },
+      { title: "If stuck, hold a potion and ask the cat", text: "Hold a bottle from this set and ask a cat to highlight helpful objects or reveal the solution." },
+    ],
+    mistakes: [
+      "Squinting at an unpatched build — install v1.0.9 or later before deciding the cards are unreadable.",
+      "Applying actual solitaire rules; the layout is a static answer key, not a card game.",
+      "Guessing an order to avoid the cat hint and then losing track of which position was wrong.",
+    ],
+  },
+  {
+    slug: "compass",
+    name: "Compass Puzzle",
+    title: "Shelve the Potions! Compass Puzzle Solution",
+    seoTitle: "Shelve the Potions! Compass Puzzle — Hint, Rule & Direction Order",
+    description:
+      "A gentle hint for the Shelve the Potions compass shelf: find the compass-rose clue, read the direction sequence, and check the community-reported order — clearly labeled as a single-source lead.",
+    quickAnswer:
+      "The compass shelf is a sequence board: a compass-rose clue in the workshop gives you an order of directions, and the shelf asks you to reproduce it. A community guide reports the order E, W, NE, SE, N, NW, SW, S — a single-source lead we have not reproduced in-game yet, so treat it as a check rather than a guarantee.",
+    hero: "/img/hero-workshop-960.webp",
+    heroAlt:
+      "A wide view of the potion workshop used when a specific compass shelf screenshot is unavailable.",
+    heroCaption:
+      "Store media showing the workshop. The compass clue itself is not captured in official screenshots; the sequence comes from one community puzzle guide.",
+    hint:
+      "Look for a compass-rose style display in the workshop. The directions are read in a specific order — that order is the shelf order.",
+    rule:
+      "Reproduce the direction sequence exactly as the clue presents it. The bottles are not sorted by any property of their own; the clue display is the entire answer key.",
+    proposedSolution: "E, W, NE, SE, N, NW, SW, S",
+    solutionCaveat:
+      "Single community-guide source. It is consistent with how the game's other sequence boards work, but we have not reproduced it in the release build — use it to check an order you derived yourself.",
+    steps: [
+      { title: "Find the compass clue", text: "Scan the workshop walls and desks for a compass-rose display before touching the shelf." },
+      { title: "Read the direction order", text: "Note the sequence exactly as presented, first entry to last. Photographing it makes checking easier." },
+      { title: "Apply it to the shelf", text: "Place the direction-marked bottles in the order you read — not by any visual pattern on the bottles." },
+      { title: "Verify against the lead below", text: "If your own reading disagrees with the community sequence, trust your in-game reading and re-check the clue, not the shelf." },
+    ],
+    mistakes: [
+      "Sorting bottles by north-to-south or clockwise instinct instead of the clue's presented order.",
+      "Skipping the clue display and shuffling by eye.",
+      "Treating the community sequence as verified — it is a single-source lead until reproduced.",
+    ],
+  },
+  {
+    slug: "runes-books",
+    name: "Runes Puzzle (Four Storybooks)",
+    title: "Shelve the Potions! Runes Puzzle Solution",
+    seoTitle: "Shelve the Potions! Runes Puzzle — The Four Storybooks Behind the Desk",
+    description:
+      "The rune shelf's clue is the four storybooks behind the workshop desk: their page numbers are the symbols. Hint, rule, and the community-checked order — plus why this is not the Greek letters shelf.",
+    quickAnswer:
+      "The clue is not on the shelf: four storybooks behind the workshop desk sit open to different pages, and those page numbers are the symbols on the rune bottles. Two independent sources report the order F, FF, FFF, FR, R, RF, RFF, RFFF — community shorthand for the page-number sequence. Important: this is a different board from the Greek letters shelf, whose clue lives on the vials' corks.",
+    hero: "/img/hero-workshop-960.webp",
+    heroAlt:
+      "A wide view of the potion workshop used when a specific rune shelf screenshot is unavailable.",
+    heroCaption:
+      "Store media showing the workshop. The storybooks themselves are not captured in official screenshots; the clue description comes from a Steam thread and community guides.",
+    hint:
+      "Walk behind the workshop desk. Four storybooks sit there, open to different pages — that is your answer key.",
+    rule:
+      "Match each rune symbol on the bottles to a page number in the storybooks, then order the bottles by those numbers. The symbols are not sorted by shape; they are page markers.",
+    proposedSolution: "F, FF, FFF, FR, R, RF, RFF, RFFF (community shorthand for the page-number order)",
+    solutionCaveat:
+      "Reported in a Steam discussion and matched by an independent community guide — the strongest community corroboration of any provisional sequence on this site, but still not reproduced by us in-game.",
+    steps: [
+      { title: "Go behind the desk", text: "The four storybooks sit on the desk surface behind the main working area; walk around if the camera blocks them." },
+      { title: "Note the page numbers", text: "Each book sits open to a different page. Zoom or photograph so you can read every number." },
+      { title: "Match runes to pages", text: "Treat each bottle's rune as a page marker and order the bottles by the storybooks' page numbers." },
+      { title: "Check the shorthand below", text: "Reveal the community sequence only after deriving your own order from the books." },
+      { title: "Solving the Greek letters shelf instead?", text: "Wrong guide — that board's clue is the corks of the vials on the tables. This mix-up is common enough that Steam players make it too." },
+    ],
+    mistakes: [
+      "Using the storybooks for the Greek letters shelf — their vial corks, not these books, hold that answer.",
+      "Sorting rune symbols by shape similarity instead of matching them to page numbers.",
+      "Reading only part of the books; a rejected shelf usually means one page number was missed.",
+    ],
+  },
+  {
+    slug: "weather-forecast",
+    name: "Weather Forecast Puzzle",
+    title: "Shelve the Potions! Weather Forecast Puzzle",
+    seoTitle: "Shelve the Potions! Weather Forecast Puzzle — Hint & Approach",
+    description:
+      "A gentle hint for the Shelve the Potions weather forecast shelf: find the forecast display, read its sequence, and reproduce it — with our verification status stated honestly.",
+    quickAnswer:
+      "The weather shelf is a pattern-copy board: a forecast display somewhere in the workshop lays out a sequence of weather icons, and the shelf asks you to reproduce that order. Community guides list the opening icons (a tornado leads the sequence), but we are not publishing a full order we cannot verify — no verified sequence appears below.",
+    hero: "/img/hero-workshop-960.webp",
+    heroAlt:
+      "A wide view of the potion workshop used when a specific weather forecast screenshot is unavailable.",
+    heroCaption:
+      "Store media showing the workshop. The forecast display itself is not captured in official screenshots; the board description comes from community puzzle guides.",
+    hint:
+      "Look for a forecast board or wall display with weather icons arranged in a row. That display is the answer key, not the shelf.",
+    rule:
+      "Reproduce the icon sequence from the forecast display exactly, first icon to last. Nothing about the bottles themselves tells you the order.",
+    proposedSolution: null,
+    solutionCaveat:
+      "Community guides agree the sequence starts with a tornado icon, but we have not verified the complete order. We publish the full sequence only after reproducing it in the release build.",
+    steps: [
+      { title: "Find the forecast display", text: "Scan the workshop for a board of weather icons laid out in a row before touching any bottles." },
+      { title: "Transcribe the order", text: "Write down or photograph the icons first-to-last; guesswork between two similar icons is what usually rejects the shelf." },
+      { title: "Reproduce it on the shelf", text: "Match each weather-marked bottle to its icon position in the sequence." },
+      { title: "If stuck, hold a potion and ask the cat", text: "Hold a bottle from this set and ask a cat to highlight helpful objects or reveal the solution." },
+    ],
+    mistakes: [
+      "Sorting bottles by what weather feels adjacent (sun before rain, and so on) instead of reading the display's actual order.",
+      "Misreading one icon in the middle of the sequence and trying to fix the shelf by shuffling both ends.",
+      "Expecting the sequence below — for this board we deliberately publish none until it is verified.",
+    ],
+  },
+  {
+    slug: "scales-numbers",
+    name: "Reveal-the-Numbers Puzzles (Scales · Harp · Candelabra)",
+    title: "Shelve the Potions! Scales, Harp & Candelabra Puzzles",
+    seoTitle: "Shelve the Potions! Scales, Harp & Candelabra — Reveal the Numbers, Then Sort",
+    description:
+      "Three Shelve the Potions boards share one trick: a hidden readout must be revealed first, then the bottles sort lowest to highest. How the family works and where players get stuck.",
+    quickAnswer:
+      "The scales, harp, and candelabra shelves are one family: each has a hidden number readout you must find and reveal first, and only then does the shelf become a simple lowest-to-highest sort. Players who reject these shelves almost always skipped the reveal step and tried to sort by eye.",
+    hero: "/img/hero-workshop-960.webp",
+    heroAlt:
+      "A wide view of the potion workshop used for the reveal-the-numbers puzzle family overview.",
+    heroCaption:
+      "Store media showing the workshop. The three readout objects are not captured in official screenshots; the family description comes from community puzzle guides.",
+    hint:
+      "Do not sort yet. Each of these boards hides a number readout somewhere in the room — a scale with a reading, a harp, a candelabra with a count. Find it first.",
+    rule:
+      "Reveal or read the hidden numbers, then order the bottles lowest to highest. The sort itself is trivial; the entire puzzle is surfacing the numbers.",
+    proposedSolution: null,
+    solutionCaveat:
+      "No fixed sequence to publish — the correct order is whatever your readout shows, sorted ascending. We document the method because that reveal step is where players get stuck, not the sorting.",
+    steps: [
+      { title: "Identify the readout object", text: "For the scales board it is a scale with a reading; the harp and candelabra families work the same way with their own objects. Scan the room, not the shelf." },
+      { title: "Reveal the numbers", text: "Interact or read carefully enough to note every value. Photographing the readout makes the next step error-proof." },
+      { title: "Sort lowest to highest", text: "With the numbers in hand, order the bottles ascending. For the harp, community guides describe a note sequence after the numbers — read what your harp actually shows." },
+      { title: "If a shelf rejects, re-read the numbers", text: "A rejected sort on these boards almost always means one value was misread, not that the sorting logic is different." },
+    ],
+    mistakes: [
+      "Sorting by bottle appearance and treating a rejection as a wrong rule — the rule is always ascending; the numbers were just never read.",
+      "Mixing up which readout belongs to which shelf when several of these boards are active at once.",
+      "Skipping the photograph and misreading a single value mid-list.",
+    ],
+  },
+  {
+    slug: "number-of-corners",
+    name: "Number of Corners Puzzle (Shapes)",
+    title: "Shelve the Potions! Number of Corners Puzzle",
+    seoTitle: "Shelve the Potions! Number of Corners (Shapes) Puzzle — Count, Then Sort",
+    description:
+      "The shapes shelf sorts by each polygon's corner count, lowest to highest. Why players miscount it, and the practical way to count bottle shapes without guessing.",
+    quickAnswer:
+      "Count the corners on each polygon bottle and sort lowest to highest — there is no hidden clue object on this board. The difficulty is pure counting: players report the shapes are hard to count even zoomed in, and a single miscount rejects the whole shelf. Work corner by corner and mark your count before placing anything.",
+    hero: "/img/hero-workshop-960.webp",
+    heroAlt:
+      "A wide view of the potion workshop used for the number of corners puzzle overview.",
+    heroCaption:
+      "Store media showing the workshop. The polygon bottles are not captured in official screenshots; the counting difficulty is documented in the game's own feedback threads.",
+    hint:
+      "No clue hunt this time — the answer is on the bottles. What matters is how you count, not where you look.",
+    rule:
+      "Order the polygon bottles by corner count, lowest to highest. Polygons have as many corners as sides, so count either, but count corners deliberately: follow the outline and physically count each point.",
+    proposedSolution: null,
+    solutionCaveat:
+      "No fixed sequence to publish — the correct order is your own count. The counting difficulty is real: the developer's feedback thread collected requests for a counter because shapes are hard to distinguish even zoomed.",
+    steps: [
+      { title: "Pick one bottle at a time", text: "Take the leftmost unplaced bottle and follow its outline corner by corner, counting out loud or on paper." },
+      { title: "Write the counts down", text: "Note each bottle's count before placing anything. Correcting a miscount after the shelf rejects is far slower than writing four numbers down first." },
+      { title: "Sort ascending", text: "Place the bottles from the lowest count to the highest." },
+      { title: "If rejected, re-count the middle bottles", text: "Players report single miscounts reject the whole shelf; the middle of your order is the usual suspect because similar shapes sit there." },
+    ],
+    mistakes: [
+      "Counting sides and corners interchangeably under time pressure and drifting off by one.",
+      "Assuming two similar-looking bottles share a count — near-duplicates are exactly where miscounts happen.",
+      "Shuffling multiple bottles after a rejection instead of re-counting one suspect.",
     ],
   },
 ];

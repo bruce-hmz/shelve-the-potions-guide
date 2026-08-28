@@ -47,7 +47,7 @@ export default function WalkthroughPage() {
               </p>
               <div className="coverage-note">
                 <strong>Current coverage</strong>
-                <span>6 puzzle guides · abilities & hint system · full achievement checklist</span>
+                <span>First-room starter · 12 puzzle guides · abilities &amp; hint system · full achievement checklist</span>
               </div>
             </div>
             <figure className="listing-hero-image">
@@ -72,7 +72,10 @@ export default function WalkthroughPage() {
               <p className="eyebrow"><span /> Verified route set</p>
               <h2 id="coverage-heading">Choose the clue you recognize</h2>
             </div>
-            <p>Each article opens with a direct answer and then lets you stop at Hint, Rule, or Full Solution.</p>
+            <p>
+              Each article opens with a direct answer and then lets you stop at Hint, Rule, or Full Solution. Want every board at a glance? Open the{" "}
+              <Link href="/walkthrough/all-puzzle-solutions/">all-puzzle-solutions hub</Link>.
+            </p>
           </div>
           <div className="walkthrough-list">
             {puzzleGuides.map((guide, index) => (
@@ -104,7 +107,8 @@ export default function WalkthroughPage() {
             <p className="eyebrow"><span /> How to use this walkthrough</p>
             <h2 id="method-heading">Keep the puzzle, lose the frustration</h2>
             <p className="page-dek">
-              Start with the in-game evidence. Only move down the ladder when the current level is not enough.
+              Start with the in-game evidence. Only move down the ladder when the current level is not enough. Brand new? Begin with the{" "}
+              <Link href="/walkthrough/first-room/">first-room walkthrough</Link> — it explains the objective checklist the tutorial never points at.
             </p>
             <ul className="check-list">
               <li><CheckIcon /><span><strong>Hint first</strong> — locate the missing clue or item.</span></li>
