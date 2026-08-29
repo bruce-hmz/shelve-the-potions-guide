@@ -423,3 +423,24 @@ DISCORD_DATA_CONFIDENCE: LOW-MEDIUM（仅二手转述）。
 - Programmatic SEO（谜题模板批量生产）：**20%**
 
 > 下一轮复跑提示：先读本报告，将 §8/§18 中已完成的条目标记 DONE；重点复查（a）v1.0.11 之后的新补丁，（b）Hooman 条件是否有更多玩家复现/反驳，（c）ninewiki 与 hyphen wiki 的新增页面，（d）"Only negative feedback"帖与评测区是否出现新机制诉求（开发者明确说会出 QOL 补丁，需求会持续产生）。
+
+---
+
+## 27. 竞品设计调研（2026-08-28 补充）
+
+样本：ninewiki（SERP 现任者，单页 29 条目）、shelve-the-potions.wiki（26 页，5 栏目，最强竞品）。抓取页面：双方聚合页/索引、first-room、no-magical-abilities、clue-stations。
+
+**ninewiki 弱点（我方结构性优势，保持）**：答案锁在图片里（无文本/无障碍/SEO 三输）、零剧透控制、作者仅为"Editorial"、无更新时间、两个空节、两处重复条目。我们的 Hint→Rule→Solution 阶梯 + 逐条验证状态正是打它的姿势，无需调整。
+
+**竞品站可借鉴设计（按优先级）**：
+1. **P1 — 症状→排查诊断表**：其 first-room 页有 "Symptom / Best next check" 两列表，精准对上"照做仍被拒"的真实卡点。建议加到 all-solutions 聚合页 + flower / number-of-corners / chess 页。
+2. **P1 — 逐页评审日期 + 补丁复检旗标**：竞品每页显示发布/评审双日期（其 no-abilities 页 08-27 发布、08-28 复审），并标注"patch-sensitive facts marked for recheck"。我方 ArticleTrust 是全站单一日期，应改为数据驱动的逐页日期。
+3. **P1 — Clue Stations 参考页**（其独有栏目）：定义"任何把散落信息变成货架顺序的房间物件"，7 行 Station→Output 表（Clock→时间序列、Book stand→页码、Flower stand→颜色+花瓣数…），服务"我到底该按什么属性排"的决策需求，且天然是指向各谜题页的内链枢纽。内容风险低（描述性、无序列）。建议 `/help/clue-stations/`。
+4. **P2 — no-abilities 页结构升级**：竞品把 v1.0.11 开关作为"第一步且旧补丁跑法视为失效"来写，用 Step/What to do/Why it matters 三列表 + "What is probably safe" 与 "If it does not unlock"（失败诊断）平行节。比我们的清单式更强，值得对齐。
+5. **P2 — 真实覆盖计数**：竞品首页声称"live solution count read from 15 pages"实为文案（无真交互）。我们可从 puzzleGuides 数据在构建时算出真实的"21 板已覆盖 N"——诚实版胜过假动态。
+6. **P2 — 意图式导航文案**："Choose what is blocking your shelf" + Jump-to 快跳条。选择性借鉴到 walkthrough 枢纽（避免其四重冗余导航）。
+7. **P3 — 页脚社区链接**：竞品页脚挂 Discord 邀请 + YouTube。我方 Steam 置顶帖有官方 Discord 链接可挂。
+8. **教训（反面）**：竞品在 first-room 意图上有两个 URL（/walkthrough/first-room/ 与 /guide/how-to-get-out-of-first-room/）互相蚕食，甚至页面里放了编辑注解自辩——我方已规避，勿重蹈；其"承诺行内补丁旗标但正文未兑现"是信任反例，承诺的 UI 必须真实可见。
+9. **视觉空窗（战略机会）**：ninewiki 依赖图片、竞品站全文零截图——整个 SERP 没有一张实机标注截图。购入游戏后补实机截图是无人能打的差异点。
+
+**结论**：不抄布局，抄三类东西——诊断表模式、逐页时效信号、Clue Stations 型参考枢纽。我方的剧透阶梯与验证标注继续是对手没有的差异化，保持。
