@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleTrust } from "@/components/article-trust";
+import { AdBox300 } from "@/components/ads";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { getHelpGuide } from "@/content/help-guides";
 import { RelatedGuides } from "@/components/related-guides";
@@ -356,9 +357,9 @@ export default async function HelpPage({ params }: PageProps) {
               </>
             )}
 
-            <aside className="ad-slot article-ad" aria-label="Advertisement placeholder">
+            <aside className="ad-slot ad-slot--live article-ad" aria-label="Advertisement">
               <span>Advertisement</span>
-              <small>Reserved after the useful answer</small>
+              <AdBox300 />
             </aside>
 
             <section id="sources" className="article-section">

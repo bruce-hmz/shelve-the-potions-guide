@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArticleTrust } from "@/components/article-trust";
+import { AdBox300 } from "@/components/ads";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ArrowIcon } from "@/components/icons";
 import { site } from "@/lib/site";
@@ -124,9 +125,9 @@ export default function MissingPotionsPage() {
               </ul>
             </section>
 
-            <aside className="ad-slot article-ad" aria-label="Advertisement placeholder">
+            <aside className="ad-slot ad-slot--live article-ad" aria-label="Advertisement">
               <span>Advertisement</span>
-              <small>Reserved after the useful answer</small>
+              <AdBox300 />
             </aside>
 
             <section id="sources" className="article-section">

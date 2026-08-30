@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AdNativeBanner } from "@/components/ads";
 import { ArrowIcon, CheckIcon, ExternalIcon, PlayIcon } from "@/components/icons";
 import { GuideCard } from "@/components/guide-card";
 import { TrustStrip } from "@/components/trust-strip";
@@ -142,9 +143,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <aside className="ad-slot container" aria-label="Advertisement placeholder">
+      <aside className="ad-slot ad-slot--live container" aria-label="Advertisement">
         <span>Advertisement</span>
-        <small>Reserved space · no ad before useful content</small>
+        <AdNativeBanner />
       </aside>
 
       <section className="section help-section" aria-labelledby="help-heading">

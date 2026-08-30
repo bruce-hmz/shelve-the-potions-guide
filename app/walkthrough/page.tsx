@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArticleTrust } from "@/components/article-trust";
+import { AdNativeBanner } from "@/components/ads";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ArrowIcon, CheckIcon, PlayIcon } from "@/components/icons";
 import { puzzleGuides } from "@/content/puzzles";
@@ -96,9 +97,9 @@ export default function WalkthroughPage() {
         </div>
       </section>
 
-      <aside className="ad-slot container" aria-label="Advertisement placeholder">
+      <aside className="ad-slot ad-slot--live container" aria-label="Advertisement">
         <span>Advertisement</span>
-        <small>Reserved after useful route coverage</small>
+        <AdNativeBanner />
       </aside>
 
       <section className="section listing-method" aria-labelledby="method-heading">
