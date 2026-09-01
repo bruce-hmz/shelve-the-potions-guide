@@ -57,10 +57,25 @@ const articleJsonLd = {
   author: { "@type": "Organization", name: site.name },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Do ability upgrades count as using abilities in Shelve the Potions?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The community answer is no — buying upgrades is a purchase, not a use. This is player consensus rather than a developer ruling; the developer's advice in the same thread is to enable the v1.0.11 disable-abilities toggle for a risk-free run.",
+      },
+    },
+  ],
+};
+
 export default function NoAbilitiesRunPage() {
   return (
     <main id="main-content">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, articleJsonLd]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, articleJsonLd, faqJsonLd]) }} />
       <article>
         <header className="article-hero">
           <div className="container article-hero__inner">
@@ -89,6 +104,7 @@ export default function NoAbilitiesRunPage() {
               <a href="#rules">What counts, what is safe</a>
               <a href="#midrun">Stuck mid-run?</a>
               <a href="#legacy">On an older build</a>
+              <a href="#faq">FAQ</a>
             </nav>
           </aside>
 
@@ -148,6 +164,19 @@ export default function NoAbilitiesRunPage() {
               </p>
             </section>
 
+            <section id="faq" className="article-section">
+              <p className="article-label">FAQ</p>
+              <h2>Frequently asked questions</h2>
+              <ul className="check-list">
+                <li>
+                  <CheckIcon />
+                  <span>
+                    <strong>Do ability upgrades count as using abilities?</strong> The community answer in the Steam &quot;ability usage?&quot; thread (28 Aug 2026) is <strong>no</strong> — buying an upgrade is a purchase, the same category as the two purchase achievements, while a &quot;use&quot; means actually triggering something: asking a cat for help or firing a keybind ability. Two honesty notes: that reading is <em>player consensus, not a developer ruling</em> — when the same thread reached the developer, the advice was simply to enable the v1.0.11 disable-abilities toggle for an easier achievement — and one player in that thread lost the achievement to a single accidental use on an unpatched run, so the margin for error is zero. If your run is too valuable to bet on an interpretation, flip the toggle (see <a href="#setup">step 1</a>) and the question never comes up.
+                  </span>
+                </li>
+              </ul>
+            </section>
+
             <aside className="ad-slot ad-slot--live article-ad" aria-label="Advertisement">
               <span>Advertisement</span>
               <AdBox300 />
@@ -160,6 +189,7 @@ export default function NoAbilitiesRunPage() {
                 <li>Achievement name, unlock rate, and related achievements: Steam Community global stats for app 4928820.</li>
                 <li>Disable-abilities toggle behaviour and intent: official patch notes v1.0.11 (26 Aug 2026).</li>
                 <li>Pre-patch failure modes (silent unlocks, lost runs, d-pad binding, force-quit rollback): Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
+                <li>Upgrade-vs-use boundary question, the community &quot;No&quot; answer, and the developer&apos;s toggle recommendation: Steam discussion thread &quot;ability usage?&quot; (28–30 Aug 2026).</li>
                 <li>Petting-vs-asking separation: community reports consistent with Steam achievement text; we label it conservative guidance rather than a datamined rule.</li>
               </ul>
             </section>

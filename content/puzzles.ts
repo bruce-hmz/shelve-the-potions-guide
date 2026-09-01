@@ -25,7 +25,7 @@ export const puzzleGuides: PuzzleGuide[] = [
     description:
       "Solve the Shelve the Potions clock puzzle: where the second long clock hand hides, a spoiler-light hint, the ordering rule, and a clearly labeled provisional time sequence.",
     quickAnswer:
-      "Restore the missing clock pieces before trying to order the shelf. Can't find the second long clock hand? Hold a time potion and ask a cat to show all the needed items — the developer's own tip — or check upright against the room's pillars first. The times are the clue; the proposed sequence below comes from one community guide and still needs release-build reproduction.",
+      "Restore the missing clock pieces before trying to order the shelf. Can't find the second long clock hand? Hold a time potion and ask a cat to show all the needed items — the developer's own tip — or check the room's columns first: the developer has confirmed the hand sits around one of them, leaning against it. The times are the clue; the proposed sequence below comes from one community guide and still needs release-build reproduction.",
     hero: "/img/clock-puzzle-1200.webp",
     heroAlt:
       "A clock-themed potion shelf with numbered bottles and a large clock face in Shelve the Potions.",
@@ -41,7 +41,7 @@ export const puzzleGuides: PuzzleGuide[] = [
       "Community-guide lead only. We have not reproduced this eight-time order in the release build, so use it as a check rather than a guaranteed answer.",
     steps: [
       { title: "Find the missing pieces", text: "Search nearby shelves and clue areas before changing the clock shelf." },
-      { title: "Can't find the second long clock hand?", text: "You are not alone — this exact question came up on the Steam forum. The developer's tip: hold a time potion and ask the Cat to show all the needed items. One player also recalls the hand standing tall against one of the room's pillars, so check there first before sweeping the whole workshop." },
+      { title: "Can't find the second long clock hand?", text: "You are not alone — this exact question has come up on the Steam forum repeatedly, most recently 29 Aug, and the developer answered it again. The developer's tip: hold a time potion and ask the Cat to show all the needed items. The developer has also now confirmed the hand's hiding spot in two separate threads: it sits around one of the room's columns, leaning against it — so check the columns before sweeping the whole workshop." },
       { title: "Restore the clock", text: "Put the displaced clock pieces back so every required time can be read." },
       { title: "Write down the times", text: "Capture the complete sequence before moving potions; guessing while sorting makes errors harder to spot." },
       { title: "Check the proposed order", text: "Reveal the sequence below only after you have tried to derive the rule yourself. Finishing this board also unlocks the \"Proud Grandfather\" achievement." },
@@ -50,6 +50,7 @@ export const puzzleGuides: PuzzleGuide[] = [
       "Assuming the bottles simply run from the earliest time to the latest.",
       "Trying to finish the shelf before every missing clock piece is restored.",
       "Rescanning the entire room by eye for the clock hand instead of holding a time potion and letting the cat mark the parts.",
+      "Searching for the hand standing upright on a shelf — the developer places it around a column, leaning against it.",
       "Treating the provisional community sequence as release-build verified.",
     ],
   },
@@ -78,12 +79,12 @@ export const puzzleGuides: PuzzleGuide[] = [
       { title: "Find the reference board", text: "Use the chart beside the shelf as the primary clue instead of relying on bottle appearance alone." },
       { title: "Return the powders", text: "A community solution lead indicates that displaced powders complete the clue setup." },
       { title: "Read the relationship", text: "Match each clue item to the corresponding color before arranging the shelf." },
-      { title: "Colors look identical?", text: "Players repeatedly flag pink vs red and white vs beige as hard to tell apart. Before fighting the shelf, check the options menu — the developer's FAQ confirms colorblind support \"plus a lot more of accessibility options\" — and lean on the chart, not your eyes, for the ambiguous pairs." },
+      { title: "Colors look identical?", text: "Players repeatedly flag pink vs red, white vs beige and purple vs dark blue as hard to tell apart — the third pair surfaced in a 30 Aug Steam review. Before fighting the shelf, check the options menu — the developer's FAQ confirms colorblind support \"plus a lot more of accessibility options\" — and zoom in on the bottles (Ctrl on keyboard, right stick on controller; both developer-confirmed, and collected in our settings & comfort guide). Then lean on the chart, not your eyes, for the ambiguous pairs." },
       { title: "Check the proposed sequence", text: "Reveal the five-color lead only if your reconstructed clue still does not resolve the shelf." },
     ],
     mistakes: [
       "Sorting the colors as a conventional rainbow without checking the board.",
-      "Trusting your eyes on the pink/red and white/beige pairs that players report look nearly identical.",
+      "Trusting your eyes on the pink/red, white/beige and purple/dark-blue pairs that players report look nearly identical.",
       "Ignoring clue items that were moved elsewhere in the workshop.",
       "Publishing or sharing the proposed sequence without its provisional label.",
     ],

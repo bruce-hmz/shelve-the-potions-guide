@@ -100,7 +100,7 @@ export default function SettingsAndComfortPage() {
               </p>
               <ul className="mistake-list" style={{ listStyle: "none" }}>
                 <li><strong>Raise the FOV.</strong> Wider field of view reduces the swimming feeling while you move around the workshop.</li>
-                <li><strong>Turn on the colorblind assist mode</strong> and see whether it helps you too — the developer suggested it as part of the same comfort answer.</li>
+                <li><strong>Turn on the colorblind assist mode</strong> and see whether it helps you too — the developer suggested it as part of the same comfort answer. Color confusion matters for the puzzles as well: our <Link href="/puzzles/color-puzzle/">color puzzle guide</Link> lists the shade pairs players keep mixing up.</li>
               </ul>
               <p>
                 One trade-off is worth knowing before you max the slider: the developer himself notes that a higher FOV makes the bottle labels harder to read. That is exactly what the <a href="#zoom">zoom controls</a> below are for — set the FOV for comfort first, then zoom in when you actually need to read a sticker.
