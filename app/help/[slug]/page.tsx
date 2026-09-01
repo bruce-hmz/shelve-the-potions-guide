@@ -101,6 +101,7 @@ export default async function HelpPage({ params }: PageProps) {
                   <a href="#puzzle-achievements">Puzzle achievements</a>
                   <a href="#named-shelves">Named boards</a>
                   <a href="#cats-and-upgrades">Cats · upgrades</a>
+                  <a href="#cat-lady">Petting all 10 cats</a>
                   <a href="#hooman">"Hooman needs help :)"</a>
                   <a href="#no-abilities">No-abilities run</a>
                 </>
@@ -216,6 +217,19 @@ export default async function HelpPage({ params }: PageProps) {
                     </table>
                   </div>
                 </section>
+                <section id="cat-lady" className="article-section article-callout article-callout--hint">
+                  <p className="article-label">The finicky one</p>
+                  <h2>&quot;Cat lady&quot; — petting all 10 magical cats</h2>
+                  <p>
+                    About 35% of players have <em>&quot;Cat lady&quot;</em> (pet all 10 magical cats), and the two most common failures are both covered by developer replies in the Steam &quot;Catlady achievement&quot; thread (29–31 Aug 2026). First, the pet itself: <strong>petting means moving the cursor over a cat and holding it there — a single click does not count</strong>. The developer spelled the method out verbatim after one player counted ten pets with no achievement: &quot;you need to pet them, move and hold the mouse over the cats.&quot;
+                  </p>
+                  <p>
+                    Second, the commonly missed cat: <strong>Sir Meowsir sits on a barrel in front of the fireplace</strong> — the developer&apos;s answer to the player who could not find the tenth cat on a second, no-magic playthrough. If the achievement still does not pop after a recount, redo the sweep using the hover-and-hold method rather than clicking; the counted-ten-but-nothing-happened report in the same thread was resolved by exactly that distinction. The method is community-verified, not retested by us in-game.
+                  </p>
+                  <p className="source-note">
+                    Source: Steam discussion &quot;Catlady achievement&quot; (29–31 Aug 2026, two developer replies) and an independent 29 Aug Steam review about tracking down missed cats.
+                  </p>
+                </section>
                 <section id="hooman" className="article-section article-callout article-callout--hint">
                   <p className="article-label">The confusing one</p>
                   <h2>&quot;Hooman needs help :)&quot; — why your hint attempt does nothing</h2>
@@ -225,7 +239,7 @@ export default async function HelpPage({ params }: PageProps) {
                   <ul className="mistake-list" style={{ listStyle: "none" }}>
                     <li><strong>Fill at least 30 shelves first.</strong> The cat&apos;s first help option does not exist before that point.</li>
                     <li><strong>Carry a potion whose puzzle you have not solved yet.</strong> The hint needs an unsolved board to work on.</li>
-                    <li><strong>Interact with the cat and use the top option of the help menu</strong> (the one that marks puzzle pieces), not the upgrade tab.</li>
+                    <li><strong>Interact with the cat, then switch from the Upgrade tab to the other tab of the menu</strong> and take the top option there — the one called &quot;Mark puzzle pieces&quot;. The menu opens on the Upgrade window, which is why the working option is easy to miss.</li>
                   </ul>
                   <p>
                     One more warning: this achievement is effectively <strong>missable</strong>. If you have already solved every puzzle in the workshop, no unsolved board remains for the hint to act on — the player who shared the method notes you would have to wait for another playthrough. So if you are chasing all 24, use your first hint deliberately while puzzles are still open.
@@ -336,7 +350,7 @@ export default async function HelpPage({ params }: PageProps) {
                     On Steam Deck the d-pad down button is hard-wired to two actions at once — highlight a shelf and show part of a potion answer. The built-in remap UI only accepts keyboard and mouse input, so you cannot reassign it from controller mode alone. Before patch v1.0.11 this dual binding was the main way players accidentally voided a no-abilities run; the new <a href="#disable">disable-abilities toggle</a> removes most of that risk.
                   </p>
                   <p>
-                    If you want to keep the abilities usable, the developer&apos;s suggested fix from Discord still applies: move the three ability keys further apart — from the default 1-2-3 to something like I-O-P. Force-killing the game after an accidental press remains a last-resort rollback because it also rewinds recent progress; with the toggle enabled you should not need it at all.
+                    If you want to keep the abilities usable, the developer&apos;s suggested fix from Discord still applies: move the three ability keys further apart — from the default 1-2-3 to something like I-O-P. Force-killing the game after an accidental press remains a last-resort rollback because it also rewinds recent progress; with the toggle enabled you should not need it at all. If the Deck bother is stick sensitivity rather than bindings, that was addressed separately: patch v1.0.12 shipped 360-degree left-stick movement, and our <a href="/help/settings-and-comfort/">settings &amp; comfort guide</a> covers the follow-up tuning.
                   </p>
                   <p className="source-note">
                     Source: Steam Community discussion thread &quot;I wish there to be a lock for abilities&quot;, developer advice relayed from Discord, and official patch notes v1.0.10–v1.0.11. Rebinding has not been retested by us; treat as community-verified workaround.
@@ -370,7 +384,8 @@ export default async function HelpPage({ params }: PageProps) {
                 <li>Three-tier cat help description: official Steam store listing for Shelve the Potions!</li>
                 <li>Assemble behaviour and ability cooldowns: developer reply in the Steam discussion &quot;How to use Assemble ability?&quot; and official patch notes v1.0.10–v1.0.11 (Steam Community announcements).</li>
                 <li>Accidental-trigger reports and rebinding advice: Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
-                <li>&quot;Hooman needs help :)&quot; unlock steps: Steam discussion &quot;How do you unlock Hooman need help?&quot; (accepted community answer, 26–27 Aug 2026).</li>
+                <li>&quot;Hooman needs help :)&quot; unlock steps: Steam discussion &quot;How do you unlock Hooman need help?&quot; (accepted community answer, 26–27 Aug 2026), with the Upgrade-tab / &quot;Mark puzzle pieces&quot; menu path from a 27 Aug reply in the same thread.</li>
+                <li>&quot;Cat lady&quot; petting method (hold the cursor) and Sir Meowsir&apos;s fireplace barrel: developer replies in the Steam discussion &quot;Catlady achievement&quot; (29–31 Aug 2026).</li>
                 <li>No in-game retest has been done for this article; we label it accordingly and will update it once verified.</li>
               </ul>
             </section>

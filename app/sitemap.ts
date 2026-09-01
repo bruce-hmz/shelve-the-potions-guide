@@ -25,10 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/help/achievements/",
     "/help/missing-potions/",
     "/help/no-abilities-run/",
+    "/help/settings-and-comfort/",
   ];
 
   return paths.map((path) => ({
     url: new URL(path, site.url).toString(),
-    lastModified: "2026-08-28",
+    lastModified: "2026-09-01",
   }));
 }

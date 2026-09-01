@@ -17,6 +17,7 @@ export function SiteFooter() {
           <Link href="/walkthrough/">Walkthrough</Link>
           <Link href="/help/abilities-and-hints/">Abilities &amp; Hints</Link>
           <Link href="/help/achievements/">Achievements</Link>
+          <Link href="/help/settings-and-comfort/">Settings &amp; Comfort</Link>
           <a href={site.steamUrl} target="_blank" rel="noreferrer">
             Official Steam page <ExternalIcon />
           </a>

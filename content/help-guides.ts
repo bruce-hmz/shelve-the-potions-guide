@@ -34,7 +34,7 @@ export const helpGuides: HelpGuide[] = [
     description:
       "All 24 Shelve the Potions achievements explained — including the exact steps for the confusing \"Hooman needs help :)\" unlock and the patch v1.0.11 toggle that makes the rarest achievement safe to attempt.",
     quickAnswer:
-      "There are 24 achievements. Most come from completing shelf counts (1 / 25 / 50 / 100 / 150 / 200 / all), puzzle-order milestones (1 / 5 / 10 / all solutions), named boards (chess, clock, plant, chronicles, ingredients, spices), and petting cats (first + all 10). The one that confuses players is \"Hooman needs help :)\": the cat's first help option only appears after 30 shelves, and it needs an unsolved puzzle to work on.",
+      "There are 24 achievements. Most come from completing shelf counts (1 / 25 / 50 / 100 / 150 / 200 / all), puzzle-order milestones (1 / 5 / 10 / all solutions), named boards (chess, clock, plant, chronicles, ingredients, spices), and petting cats (first + all 10 — petting means moving the cursor over a cat and holding, not clicking). The one that confuses players is \"Hooman needs help :)\": the cat's help option only appears after 30 shelves, it lives on the second menu tab, and it needs an unsolved puzzle to work on.",
     hero: "/img/hero-workshop-960.webp",
     heroAlt:
       "A wide view of the potion workshop used in the achievements overview.",

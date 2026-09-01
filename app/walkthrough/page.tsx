@@ -48,7 +48,7 @@ export default function WalkthroughPage() {
               </p>
               <div className="coverage-note">
                 <strong>Current coverage</strong>
-                <span>First-room starter · 12 puzzle guides · abilities &amp; hint system · full achievement checklist</span>
+                <span>First-room starter · 12 puzzle guides · abilities &amp; hint system · full achievement checklist · settings &amp; comfort</span>
               </div>
             </div>
             <figure className="listing-hero-image">

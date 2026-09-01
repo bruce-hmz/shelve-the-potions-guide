@@ -7,3 +7,7 @@ tsconfig.tsbuildinfo
 .omx
 qa
 .vercel
+
+# local research state (do not commit)
+.research/
+automation/

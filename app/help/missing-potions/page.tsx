@@ -73,7 +73,7 @@ export default function MissingPotionsPage() {
             <div className="quick-answer">
               <span>Quick answer</span>
               <p>
-                Open the <strong>pause menu and respawn all unshelved potions</strong>. Every bottle you have not yet shelved returns to its original spawn point, so nothing in the workshop can be permanently lost. Potions you have already shelved stay exactly where they are.
+                Open the <strong>pause menu and respawn all unshelved potions</strong>. Every bottle you have not yet shelved returns to its original spawn point, so nothing in the workshop can be permanently lost. Potions you have already shelved stay exactly where they are. Hunting a <strong>flower after the flower board is already solved</strong>? That one is not lost — it is lying on its side near the weather globe (see below).
               </p>
             </div>
             <ArticleTrust />
@@ -87,6 +87,7 @@ export default function MissingPotionsPage() {
               <a href="#respawn">The pause-menu respawn</a>
               <a href="#hiding">Where bottles like to hide</a>
               <a href="#cat">Make the cat point at it</a>
+              <a href="#flower">The flower that is not lost</a>
               <a href="#limits">What respawning does not do</a>
             </nav>
           </aside>
@@ -116,6 +117,20 @@ export default function MissingPotionsPage() {
               </p>
             </section>
 
+            <section id="flower" className="article-section article-callout article-callout--hint">
+              <p className="article-label">The special case</p>
+              <h2>The week 7/8 flower that is not actually lost</h2>
+              <p>
+                Three players hit the same wall in one Steam thread in late August: the flower shelf is already solved, one flower for week 7 or 8 still seems missing, and nothing helps. The catch is that this flower is <strong>not a missing bottle</strong> — it has already been placed, and the community answer is where it ended up: <strong>the week 7/8 flower lies on its side near the weather globe, where it easily reads as a random potion</strong> instead of a flower.
+              </p>
+              <p>
+                The tools on this page deliberately do not apply here. Placed flowers cannot be picked back up, and the developer&apos;s cat tip — carry the flower potion and ask a cat to highlight what you still need — only works while the board is <em>unsolved</em>. Once the puzzle is finished, the hint has nothing left to point at. So before you panic, walk to the weather globe and look low for a bottle tipped on its side; if you are still mid-puzzle, the <Link href="/puzzles/flower-ordering/">flower ordering guide</Link> covers the board itself.
+              </p>
+              <p className="source-note">
+                Source: Steam discussion &quot;Missing flower&quot; (28 Aug 2026, five participants) — developer reply on the cat-highlight method plus the community-verified weather-globe location. Not retested by us in-game.
+              </p>
+            </section>
+
             <section id="limits" className="article-section">
               <h2>What respawning does not do</h2>
               <ul className="mistake-list" style={{ listStyle: "none" }}>
@@ -136,6 +151,7 @@ export default function MissingPotionsPage() {
               <ul className="mistake-list" style={{ listStyle: "none" }}>
                 <li>Pause-menu respawn and hold-a-potion cat behaviour: pinned &quot;Frequently Asked Questions&quot; thread by Knight Owl Games, Steam forum for app 4928820.</li>
                 <li>Hiding spots and the white-cat chess bishop: converging reports in Steam discussion threads (Aug 2026).</li>
+                <li>Week 7/8 flower location and the solved-puzzle hint limit: Steam discussion &quot;Missing flower&quot; (28 Aug 2026), developer and community replies.</li>
                 <li>No in-game retest has been done for this article; details are labelled accordingly.</li>
               </ul>
             </section>

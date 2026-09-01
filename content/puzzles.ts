@@ -217,11 +217,13 @@ export const puzzleGuides: PuzzleGuide[] = [
       { title: "Count leaves per flower", text: "Zoom if needed and count the leaves attached to each flower. Photographing the display makes this much easier than eyeballing it live." },
       { title: "Pair color with leaf count", text: "Treat each flower as a two-part key: first match its color group then sub-order by leaf count within that color." },
       { title: "If rejected twice ask the cat", text: "Multiple players report retry loops after the answer hint. At that point letting the cat inspect one potion usually resets the check and highlights the mismatched bottle." },
+      { title: "Already solved but a flower seems missing?", text: "That flower is not lost. Placed flowers cannot be picked back up and the cat hint only works while the board is unsolved — the week 7/8 flower is lying on its side near the weather globe, where it reads as a random potion. Our missing potions guide has the full story." },
     ],
     mistakes: [
       "Sorting by color alone without counting the leaves.",
       "Miscounting one flower by a single leaf and having the entire shelf reject.",
       "Ignoring the cat inspection fallback after repeated failures.",
+      "Hunting for a lost week 7/8 flower after the shelf is already solved — it is on its side near the weather globe, not in a hiding spot.",
     ],
   },
   {

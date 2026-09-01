@@ -204,6 +204,17 @@ export const guidePages: GuidePage[] = [
     status: "Research ready",
   },
   {
+    title: "Shelve the Potions! Settings & Comfort Guide",
+    shortTitle: "Settings & comfort",
+    href: "/help/settings-and-comfort/",
+    description:
+      "Motion sickness (the developer's FOV + colorblind-assist advice), zoom keys, Steam Deck sensitivity after v1.0.12, and the A-button rebind workaround.",
+    image: "/img/hero-workshop-960.webp",
+    imageAlt: "A wide view of the potion workshop used for the settings and comfort guide cover.",
+    eyebrow: "Help guide",
+    status: "Research ready",
+  },
+  {
     title: "Shelve the Potions! Abilities & Hints",
     shortTitle: "Abilities & hints",
     href: "/help/abilities-and-hints/",

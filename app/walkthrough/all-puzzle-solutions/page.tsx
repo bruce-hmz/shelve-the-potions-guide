@@ -167,6 +167,7 @@ export default function AllSolutionsPage() {
               <a href="#number">Order by number or size</a>
               <a href="#sequence">Follow the sequence</a>
               <a href="#pattern">Copy the pattern</a>
+              <a href="#checking">Checking what is already done</a>
               <a href="#method">How we publish answers</a>
             </nav>
           </aside>
@@ -203,13 +204,32 @@ export default function AllSolutionsPage() {
               rows={byPattern}
             />
 
+            <section id="checking" className="article-section">
+              <h2>Checking which shelves are already completed</h2>
+              <p>
+                Coming back after a break, the workshop gives no obvious per-shelf &quot;done&quot; marker — six players were discussing exactly this in one Steam thread at the end of August. Four signals currently work, and one of them matters if you are on a <Link href="/help/no-abilities-run/">no-abilities run</Link>:
+              </p>
+              <ul className="mistake-list" style={{ listStyle: "none" }}>
+                <li><strong>The green/red flash on placement.</strong> The shelf flashes when bottles go down — the same accept/reject feedback you already know from sorting, read across the whole board.</li>
+                <li><strong>Hold Tab with a potion in hand.</strong> Boards you have not finished bring up their solution overlay; if nothing appears for a shelf, that shelf is already done.</li>
+                <li><strong>The Esc pause screen shows your progress.</strong> The least spoiler-prone option and the first one to try.</li>
+                <li><strong>The third keybind ability</strong> — the one that unlocks at the 40-shelf milestone — can be used as the in-game check. This is the only method of the four that counts as an ability, so it is off the table while the <Link href="/help/abilities-and-hints/">disable-abilities toggle</Link> is on.</li>
+              </ul>
+              <p>
+                There is no persistent completed-shelf indicator in the game yet — players have asked the developer for one in the same thread. Until that ships, the Tab hold is the quickest routine: sweep the room once with a bottle in hand and note which shelves stay silent.
+              </p>
+              <p className="source-note">
+                Source: Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026, six participants). Community-verified methods; we have not retested them in-game.
+              </p>
+            </section>
+
             <section id="method" className="article-section">
               <h2>How we publish answers</h2>
               <p>
                 We only print a full sequence when a source is named next to it, and we mark whether it has been reproduced in the release build. Community-sourced sequences that we have not retested are labelled provisional; boards without a dependable answer say so instead of filling the gap with a guess. When a guide is listed as queued, it is next in production — the <Link href="/walkthrough/">walkthrough index</Link> always shows current coverage.
               </p>
               <p>
-                Patch note for collectors: v1.0.9 (day-one patch) specifically made the solitaire card board more readable, and v1.0.11 added the options toggle that disables magic abilities — relevant if you are attempting the no-abilities achievement on a fresh save.
+                Patch note for collectors: v1.0.9 (day-one patch) specifically made the solitaire card board more readable, v1.0.11 added the options toggle that disables magic abilities — relevant if you are attempting the no-abilities achievement on a fresh save — and v1.0.12 (28 Aug 2026) shipped 360-degree left-stick movement, the developer&apos;s fix for the too-sensitive stick reports.
               </p>
             </section>
 
@@ -226,6 +246,7 @@ export default function AllSolutionsPage() {
                 <li>Puzzle grouping and uncovered board names: community puzzle guides cross-checked against Steam discussion threads, Aug 2026.</li>
                 <li>Greek-letter vial clue location and order: Steam discussion &quot;Where&apos;s the greek potions clue?&quot; with developer replies, cross-checked against community guides.</li>
                 <li>Compass and runes sequences shown as community leads: public player guides — pending our own verification before they move to guide pages.</li>
+                <li>Completed-shelf check (Tab hold, placement flash, pause screen, 40-shelf ability): Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026).</li>
                 <li>Patch readability change for the card board: official day-one patch notes v1.0.9.</li>
               </ul>
             </section>
