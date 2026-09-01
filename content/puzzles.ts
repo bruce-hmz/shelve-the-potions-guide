@@ -166,7 +166,7 @@ export const puzzleGuides: PuzzleGuide[] = [
     description:
       "The telescope clue changes orientation faster than most players can track. Here is how to read it plus a practical workaround Steam players recommend.",
     quickAnswer:
-      "Look through the telescope and note each moon phase in the order it appears then match that order on the shelf. If you cannot track orientations mentally several Steam players report the same difficulty; photographing the telescope view with your phone between frames works well. The game offers no built-in pause for this board.",
+      "Look through the telescope and note each moon phase in the order it appears then match that order on the shelf. The phase images are deliberately similar — players report being unable to memorise the pattern while shelving — so photograph each frame and zoom in (Ctrl on keyboard, right stick on controller) before comparing. If you cannot track orientations mentally several Steam players report the same difficulty; the phone-photo workaround works well. The game offers no built-in pause for this board.",
     hero: "/img/steam-shot-03.jpg",
     heroAlt:
       "A Shelve the Potions workshop shelf with bottles waiting to be ordered.",
@@ -183,11 +183,12 @@ export const puzzleGuides: PuzzleGuide[] = [
       { title: "Find the telescope", text: "It sits near the window in the workshop area." },
       { title: "Watch the full cycle", text: "Look through it once without touching anything else so you see every phase change in order." },
       { title: "Record the phases", text: "Photograph the eyepiece with your phone or write down each phase label as it appears. Pausing mid-cycle makes errors much easier to spot later." },
+      { title: "Can't tell the phases apart?", text: "You are not alone — a 27 Aug Steam review calls the images 'too similar to each other to memorize the pattern when shelving'. Two things help: zoom in before comparing (Ctrl on keyboard, right stick on controller — both developer-confirmed, and collected in our settings & comfort guide), and compare the two attributes that actually change from phase to phase — how much of the disc is lit, and which side the light sits on — instead of judging each image as a whole. Keep your photo or notes next to you while you sort; that is what the review's 'memorize' struggle is asking you not to do." },
       { title: "Order the shelf", text: "Match the phases on the shelf in the same order you observed them through the telescope." },
     ],
     mistakes: [
       "Trying to memorise the whole cycle mentally without writing anything down.",
-      "Trusting a quick glance between near-identical phase images — players report the images look very similar; zoom in or photograph each frame instead.",
+      "Trusting a quick glance between near-identical phase images — a 27 Aug Steam review calls the images 'too similar to memorize the pattern when shelving'; zoom in (Ctrl / right stick) or photograph each frame instead.",
       "Skipping the telescope entirely and sorting by visual similarity of the bottles.",
       "Not realising the game offers no built-in reference once you step away from the telescope.",
     ],

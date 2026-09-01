@@ -216,7 +216,7 @@ export default function AllSolutionsPage() {
                 <li><strong>The third keybind ability</strong> — the one that unlocks at the 40-shelf milestone — can be used as the in-game check. This is the only method of the four that counts as an ability, so it is off the table while the <Link href="/help/abilities-and-hints/">disable-abilities toggle</Link> is on.</li>
               </ul>
               <p>
-                There is no persistent completed-shelf indicator in the game yet — players have asked the developer for one in the same thread. Until that ships, the Tab hold is the quickest routine: sweep the room once with a bottle in hand and note which shelves stay silent.
+                There is no persistent completed-shelf indicator in the game yet — players have asked the developer for one in the same thread. Until that ships, the Tab hold is the quickest routine: sweep the room once with a bottle in hand and note which shelves stay silent. And if the sweep itself is the problem — stuttering frames or a jittery mouse — our <a href="/help/settings-and-comfort/#performance">settings &amp; comfort guide</a> covers the frame-rate fix players have measured.
               </p>
               <p className="source-note">
                 Source: Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026, six participants). Community-verified methods; we have not retested them in-game.

@@ -7,9 +7,9 @@ import { ArrowIcon } from "@/components/icons";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Shelve the Potions! Settings & Comfort Guide — Motion Sickness, Zoom & Deck Fixes",
+  title: "Shelve the Potions! Settings & Comfort Guide — Motion Sickness, Zoom, Stutter & Deck Fixes",
   description:
-    "The comfort settings Shelve the Potions players actually ask about: the developer-advised FOV and colorblind-assist combo for motion sickness, the zoom keys, Steam Deck stick sensitivity after v1.0.12, the A-button rebind bug workaround, and reading the small solution panel.",
+    "The comfort settings Shelve the Potions players actually ask about: the developer-advised FOV and colorblind-assist combo for motion sickness, the zoom keys, Steam Deck stick sensitivity after v1.0.12, the vsync + FPS-cap fix for mouse stutter, the A-button rebind bug workaround, and reading the small solution panel.",
   alternates: { canonical: "/help/settings-and-comfort/" },
   openGraph: {
     type: "article",
@@ -50,7 +50,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Shelve the Potions! Settings & Comfort Guide",
   description:
-    "Motion sickness advice straight from the developer, zoom keys, Steam Deck stick sensitivity after v1.0.12, the A-button rebind workaround, and the small solution panel.",
+    "Motion sickness advice straight from the developer, zoom keys, Steam Deck stick sensitivity after v1.0.12, the vsync + FPS-cap fix for mouse stutter, the A-button rebind workaround, and the small solution panel.",
   image: `${site.url}/img/hero-workshop-960.webp`,
   mainEntityOfPage: `${site.url}/help/settings-and-comfort/`,
   dateModified: site.researchedAt,
@@ -73,7 +73,7 @@ export default function SettingsAndComfortPage() {
             <div className="quick-answer">
               <span>Quick answer</span>
               <p>
-                Feeling motion sick? <strong>Raise the FOV and turn on the colorblind assist mode</strong> — the developer&apos;s own suggestion. <strong>Zoom</strong> is <strong>Ctrl</strong> on keyboard / <strong>right stick</strong> on controller. Steam Deck <strong>stick sensitivity improved in v1.0.12</strong> (fine-tune via Steam Input). For the <strong>A-button rebind bug</strong>: reset to defaults and assign A last.
+                Feeling motion sick? <strong>Raise the FOV and turn on the colorblind assist mode</strong> — the developer&apos;s own suggestion. <strong>Zoom</strong> is <strong>Ctrl</strong> on keyboard / <strong>right stick</strong> on controller. Steam Deck <strong>stick sensitivity improved in v1.0.12</strong> (fine-tune via Steam Input). Mouse <strong>stutter or choppiness</strong>? <strong>Disable vsync and cap the FPS</strong> — the developer&apos;s twice-given advice; sensitivity alone rarely fixes it. For the <strong>A-button rebind bug</strong>: reset to defaults and assign A last.
               </p>
             </div>
             <ArticleTrust />
@@ -87,6 +87,7 @@ export default function SettingsAndComfortPage() {
               <a href="#motion">Motion sickness: FOV &amp; comfort</a>
               <a href="#zoom">Zoom in on labels and clues</a>
               <a href="#deck">Steam Deck stick sensitivity</a>
+              <a href="#performance">Mouse stutter &amp; frame rate</a>
               <a href="#rebind">The A-button rebind bug</a>
               <a href="#panel">The small solution panel</a>
             </nav>
@@ -116,7 +117,7 @@ export default function SettingsAndComfortPage() {
                 Zooming is built in, and the developer has now confirmed the controls twice in separate threads: <strong>hold Ctrl on keyboard, or use the right stick on a controller</strong>. The first confirmation came from a player whose bottle stickers were hard to read in a non-English language setting; the second from the FOV discussion above.
               </p>
               <p>
-                It is the right tool whenever the game shows you something small: potion labels, clue objects across the room, and the answer panel after a solve — players specifically report struggling to <strong>count leaves in the flower answer display</strong> without it (see <a href="#panel">below</a>).
+                It is the right tool whenever the game shows you something small: potion labels, clue objects across the room, and the answer panel after a solve — players specifically report struggling to <strong>count leaves in the flower answer display</strong> without it (see <a href="#panel">below</a>). It also earns its keep on the <Link href="/puzzles/moon-orientation/">moon orientation board</Link>, where the phase images are similar enough that players report being unable to memorise the pattern while shelving.
               </p>
             </section>
 
@@ -130,6 +131,26 @@ export default function SettingsAndComfortPage() {
               </p>
               <p className="source-note">
                 Source: Steam sensitivity thread with developer replies (24–30 Aug 2026) and the official patch notes v1.0.12 (28 Aug 2026).
+              </p>
+            </section>
+
+            <section id="performance" className="article-section">
+              <h2>Mouse stutter and choppiness: the frame-rate connection</h2>
+              <p>
+                Three separate Steam threads in late August describe the same family of symptoms: the view stutters while you move or look around, the cursor jitters — for some players <strong>only when the mouse moves diagonally</strong>, with straight horizontal and vertical motion fine — and one player reported headaches strong enough to end sessions after fifteen minutes. The developer has answered the topic twice with the same first move:
+              </p>
+              <ul className="mistake-list" style={{ listStyle: "none" }}>
+                <li><strong>Disable vsync and set an FPS limit.</strong> The 27 August reply to &quot;Mouse Stuttering?&quot; and the 1 September reply to &quot;Stuttering/choppiness?&quot; agree on the core fix: cap the frame rate — &quot;limiting the FPS will help a lot with this issue&quot;.</li>
+                <li><strong>Treat FOV and mouse sensitivity as follow-ups, not the fix.</strong> The developer names them as secondary adjustments in the newer reply.</li>
+              </ul>
+              <p>
+                Why capping helps is the revealing part: a player who tested the game at different frame rates in early August measured the behaviour directly — around <strong>30 FPS the game is choppy, 60–120 FPS plays fine, vsync at roughly 200 FPS is choppy again, and with the frame rate unlimited (about 1000 FPS) the mouse stopped responding at all</strong>. The same testing found <strong>sensitivity settings irrelevant</strong> to the stutter, so if you have read generic advice to &quot;just lower the sensitivity&quot;, that is not what the community&apos;s measurements show.
+              </p>
+              <p>
+                One honest caveat: the fix is not universal yet. A 1 September report in the frame-rate thread describes movement stopping mid-walk and the cursor jittering over buttons after five or ten shelves, with frame-rate and resolution changes not helping. If that matches your experience, the developer&apos;s secondary levers (FOV, sensitivity) are still worth a try — and we will update this section when a patch addresses input directly.
+              </p>
+              <p className="source-note">
+                Source: Steam threads &quot;Mouse Stuttering?&quot; (27 Aug 2026, developer reply), &quot;Stuttering/choppiness?&quot; (31 Aug – 1 Sep 2026, developer reply), and &quot;Weird mouse behaviour?&quot; (community frame-rate tests 7 Aug 2026, new report 1 Sep 2026). Not retested by us in-game.
               </p>
             </section>
 
@@ -169,6 +190,7 @@ export default function SettingsAndComfortPage() {
                 <li>Motion sickness reports and the developer&apos;s FOV + colorblind-assist suggestion: Steam discussion on stick sensitivity / motion sickness (active 24–30 Aug 2026), developer replies; corroborated by a 30 Aug Steam review citing nausea.</li>
                 <li>Zoom controls (Ctrl / right stick): developer confirmations in two separate Steam threads (24 Aug and 28 Aug 2026).</li>
                 <li>Steam Deck stick sensitivity and the v1.0.12 fix: same 24–30 Aug thread plus official patch notes v1.0.12, &quot;360 Controller Movement&quot; (28 Aug 2026).</li>
+                <li>Mouse stutter / choppiness and the vsync + FPS-cap advice: Steam threads &quot;Mouse Stuttering?&quot; (27 Aug 2026) and &quot;Stuttering/choppiness?&quot; (31 Aug – 1 Sep 2026), both with developer replies; community frame-rate matrix and the 1 Sep &quot;settings don&apos;t fix everyone&quot; report from &quot;Weird mouse behaviour?&quot; (6 Aug – 1 Sep 2026).</li>
                 <li>A-button rebind lock-out and the reset-defaults workaround: Steam discussion (30 Aug 2026), developer reply.</li>
                 <li>Small solution panel reports: Steam discussion (30 Aug 2026, flower/leaf variant); earlier card-board readability change: official patch notes v1.0.9.</li>
                 <li>No in-game retest has been done for this article; settings guidance is labelled with its source and will be updated after patches.</li>

@@ -69,6 +69,14 @@ const faqJsonLd = {
         text: "The community answer is no — buying upgrades is a purchase, not a use. This is player consensus rather than a developer ruling; the developer's advice in the same thread is to enable the v1.0.11 disable-abilities toggle for a risk-free run.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Can the no-abilities achievement be voided by a keybind that is not an ability?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "On controller, one player reports exactly that: the binding that shows a completed puzzle's solution shares a button with a magic ability, so checking a solved board triggered the ability and ended the run. Verify your bindings before starting — move ability keys away from anything you press routinely — or remove the risk entirely with the v1.0.11 disable-abilities toggle.",
+      },
+    },
   ],
 };
 
@@ -174,6 +182,12 @@ export default function NoAbilitiesRunPage() {
                     <strong>Do ability upgrades count as using abilities?</strong> The community answer in the Steam &quot;ability usage?&quot; thread (28 Aug 2026) is <strong>no</strong> — buying an upgrade is a purchase, the same category as the two purchase achievements, while a &quot;use&quot; means actually triggering something: asking a cat for help or firing a keybind ability. Two honesty notes: that reading is <em>player consensus, not a developer ruling</em> — when the same thread reached the developer, the advice was simply to enable the v1.0.11 disable-abilities toggle for an easier achievement — and one player in that thread lost the achievement to a single accidental use on an unpatched run, so the margin for error is zero. If your run is too valuable to bet on an interpretation, flip the toggle (see <a href="#setup">step 1</a>) and the question never comes up.
                   </span>
                 </li>
+                <li>
+                  <CheckIcon />
+                  <span>
+                    <strong>On controller, can a run die to a keybind that is not an ability?</strong> One 27 Aug Steam review says yes: the binding that <strong>shows a completed puzzle&apos;s solution shares a button with a magic ability</strong>, so simply checking a solved board fired the ability and voided a 12-hour run. This is a single player report, not a developer-confirmed binding table — but the insurance is cheap either way: before starting, open the control options and confirm no ability shares a button you press for anything routine (the community&apos;s I-O-P spread in <a href="#legacy">the pre-patch notes</a> is exactly this insurance), or remove the possibility entirely with the v1.0.11 <a href="#setup">disable toggle</a>.
+                  </span>
+                </li>
               </ul>
             </section>
 
@@ -190,6 +204,7 @@ export default function NoAbilitiesRunPage() {
                 <li>Disable-abilities toggle behaviour and intent: official patch notes v1.0.11 (26 Aug 2026).</li>
                 <li>Pre-patch failure modes (silent unlocks, lost runs, d-pad binding, force-quit rollback): Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
                 <li>Upgrade-vs-use boundary question, the community &quot;No&quot; answer, and the developer&apos;s toggle recommendation: Steam discussion thread &quot;ability usage?&quot; (28–30 Aug 2026).</li>
+                <li>Controller keybind conflict (solution view sharing a button with a magic ability): negative Steam review, 27 Aug 2026 — single player report, not developer-confirmed; we label it as such and point to the toggle as the guaranteed fix.</li>
                 <li>Petting-vs-asking separation: community reports consistent with Steam achievement text; we label it conservative guidance rather than a datamined rule.</li>
               </ul>
             </section>
