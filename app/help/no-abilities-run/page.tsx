@@ -148,7 +148,7 @@ export default function NoAbilitiesRunPage() {
                 <li><CheckIcon /><span><strong>Safe: petting cats.</strong> <em>&quot;Curious Cat&quot;</em> and <em>&quot;Cat lady&quot;</em> only need petting, and players reliably earn both on no-ability runs. Keep petting.</span></li>
                 <li><CheckIcon /><span><strong>Safe: buying upgrades.</strong> <em>&quot;Hello improvements.&quot;</em> and <em>&quot;I need all the help I can get ok!&quot;</em> are purchase achievements, not ability uses.</span></li>
                 <li><CheckIcon /><span><strong>Not safe: asking a cat for anything.</strong> Point, highlight, reveal — the whole menu. One use ends the run.</span></li>
-                <li><CheckIcon /><span><strong>Not safe: the keybind abilities</strong> (highlight, Assemble, reveal). With the v1.0.11 toggle on they cannot fire at all.</span></li>
+                <li><CheckIcon /><span><strong>Not safe: the keybind abilities</strong> (highlight, Assemble, reveal). The highlight one is developer-confirmed — asked whether the shelf-highlight voids the achievement, the developer answered, &quot;Sadly it&apos;ll block the achievement, as it&apos;s a magic ability&quot; — and with the v1.0.11 toggle on none of them can fire at all.</span></li>
               </ul>
             </section>
 
@@ -202,6 +202,7 @@ export default function NoAbilitiesRunPage() {
               <ul className="mistake-list" style={{ listStyle: "none" }}>
                 <li>Achievement name, unlock rate, and related achievements: Steam Community global stats for app 4928820.</li>
                 <li>Disable-abilities toggle behaviour and intent: official patch notes v1.0.11 (26 Aug 2026).</li>
+                <li>Highlight-ability ruling (&quot;Sadly it&apos;ll block the achievement, as it&apos;s a magic ability&quot;): developer reply in the official Steam feedback sticky, 25 Aug 2026.</li>
                 <li>Pre-patch failure modes (silent unlocks, lost runs, d-pad binding, force-quit rollback): Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
                 <li>Upgrade-vs-use boundary question, the community &quot;No&quot; answer, and the developer&apos;s toggle recommendation: Steam discussion thread &quot;ability usage?&quot; (28–30 Aug 2026).</li>
                 <li>Controller keybind conflict (solution view sharing a button with a magic ability): negative Steam review, 27 Aug 2026 — single player report, not developer-confirmed; we label it as such and point to the toggle as the guaranteed fix.</li>
