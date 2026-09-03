@@ -89,6 +89,7 @@ export default function MissingPotionsPage() {
               <a href="#cat">Make the cat point at it</a>
               <a href="#flower">The flower that is not lost</a>
               <a href="#limits">What respawning does not do</a>
+              <a href="#troubleshoot">When respawn is not enough</a>
             </nav>
           </aside>
 
@@ -140,6 +141,21 @@ export default function MissingPotionsPage() {
               </ul>
             </section>
 
+            <section id="troubleshoot" className="article-section">
+              <h2>When respawn is not enough</h2>
+              <p>
+                Two rarer failure modes have shown up in the Steam forum since launch. Both have a next step:
+              </p>
+              <ul className="mistake-list" style={{ listStyle: "none" }}>
+                <li>
+                  <strong>Respawn and Unstick both do nothing after a crash.</strong> One player&apos;s game crashed while a controller was being plugged in; after relaunch, five shelf spaces stopped responding and the needed potions sat stuck between shelves. In-game Unstick did nothing, and quitting and reopening was not enough either — <strong>a full restart of the game fixed it</strong>. The loss is bounded: Steam Cloud autosaves roughly every two minutes, per the developer&apos;s FAQ. This is a single player-reported fix, not retested by us.
+                </li>
+                <li>
+                  <strong>One specific potion is gone and Assemble will not bring it back.</strong> A 3 Sep 2026 report describes a purple Greek-symbols potion missing from a save — nothing highlighted in the shop, and the <Link href="/help/abilities-and-hints/#assemble">Assemble ability</Link> (which pulls unshelved potions of a set into your hand) did not retrieve it. The developer&apos;s standing answer for a genuinely lost potion still applies: use the <a href="#respawn">pause-menu respawn of all unshelved potions</a>. Single report so far, unanswered on the forum — labelled accordingly.
+                </li>
+              </ul>
+            </section>
+
             <aside className="ad-slot ad-slot--live article-ad" aria-label="Advertisement">
               <span>Advertisement</span>
               <AdBox300 />
@@ -152,6 +168,7 @@ export default function MissingPotionsPage() {
                 <li>Pause-menu respawn and hold-a-potion cat behaviour: pinned &quot;Frequently Asked Questions&quot; thread by Knight Owl Games, Steam forum for app 4928820.</li>
                 <li>Hiding spots and the white-cat chess bishop: converging reports in Steam discussion threads (Aug 2026).</li>
                 <li>Week 7/8 flower location and the solved-puzzle hint limit: Steam discussion &quot;Missing flower&quot; (28 Aug 2026), developer and community replies.</li>
+                <li>Crash-stuck shelf slots (full-restart fix) and the Assemble-fail missing-potion report: Steam discussions &quot;Potions stuck between shelves&quot; (1 Sep 2026) and &quot;missing potion&quot; (3 Sep 2026); the two-minute autosave interval is from the developer&apos;s pinned FAQ thread.</li>
                 <li>No in-game retest has been done for this article; details are labelled accordingly.</li>
               </ul>
             </section>

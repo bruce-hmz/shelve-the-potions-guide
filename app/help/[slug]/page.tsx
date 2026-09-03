@@ -226,8 +226,26 @@ export default async function HelpPage({ params }: PageProps) {
                   <p>
                     Second, the commonly missed cat: <strong>Sir Meowsir sits on a barrel in front of the fireplace</strong> — the developer&apos;s answer to the player who could not find the tenth cat on a second, no-magic playthrough. If the achievement still does not pop after a recount, redo the sweep using the hover-and-hold method rather than clicking; the counted-ten-but-nothing-happened report in the same thread was resolved by exactly that distinction. The method is community-verified, not retested by us in-game.
                   </p>
+                  <p>
+                    For the recount itself, here is the full set of ten. Nine names and locations come from one player&apos;s completed first-hand sweep in the same thread (3 Sep 2026, player-reported — we have not retested them in-game); Sir Meowsir&apos;s spot is the developer&apos;s own answer:
+                  </p>
+                  <ul className="mistake-list" style={{ listStyle: "none" }}>
+                    <li><strong>Dipper</strong> — the tutorial room</li>
+                    <li><strong>Cheddar</strong> — the chess board</li>
+                    <li><strong>AbraCATabra</strong> — the solitaire board</li>
+                    <li><strong>Jack</strong> — the price board</li>
+                    <li><strong>Merlin the First</strong> — the broom</li>
+                    <li><strong>Cerberus</strong> — the hearth</li>
+                    <li><strong>Madam Tutu</strong> — the books</li>
+                    <li><strong>The Destroyer</strong> — the scales</li>
+                    <li><strong>Athena</strong> — the rainbow</li>
+                    <li><strong>Sir Meowsir</strong> — the barrel in front of the fireplace (developer-confirmed)</li>
+                  </ul>
+                  <p>
+                    Playing on Steam Deck? Simply interacting with a cat does nothing — one Deck player reported petting exactly one cat by accident and no others. The developer&apos;s 3 Sep answer in the same thread is garbled, so we keep it verbatim: &quot;Moving the UI controls while talking a cat to the heart on the left and right on top of it is how you start petting them&quot; — which reads as: stand near a cat and <strong>move the heart UI element left and right on top of the cat</strong> to start petting, rather than pressing the interact button. The developer has not rephrased it yet, so treat the reading as our interpretation.
+                  </p>
                   <p className="source-note">
-                    Source: Steam discussion &quot;Catlady achievement&quot; (29–31 Aug 2026, two developer replies) and an independent 29 Aug Steam review about tracking down missed cats.
+                    Source: Steam discussion &quot;Catlady achievement&quot; (29 Aug – 3 Sep 2026, three developer replies) — hold-to-pet method and Sir Meowsir&apos;s barrel from the developer, nine cat names/locations from the OP&apos;s 3 Sep first-hand list, Steam Deck petting wording quoted verbatim from the developer&apos;s 3 Sep reply — plus an independent 29 Aug Steam review about tracking down missed cats.
                   </p>
                 </section>
                 <section id="hooman" className="article-section article-callout article-callout--hint">
@@ -237,15 +255,18 @@ export default async function HelpPage({ params }: PageProps) {
                     Steam&apos;s official text says only &quot;use a cat hint for the first time&quot;, so players pet a cat, see nothing usable, and assume the achievement is broken. Two players posted the same problem on the Steam forum before the actual conditions emerged. Three things have to line up:
                   </p>
                   <ul className="mistake-list" style={{ listStyle: "none" }}>
-                    <li><strong>Fill at least 30 shelves first.</strong> The cat&apos;s first help option does not exist before that point.</li>
+                    <li><strong>Fill at least 30 shelves first.</strong> The cat&apos;s first help option does not exist before that point — the developer confirmed the threshold directly: &quot;you have to complete 30 shelves before asking the cat for a hint&quot; (accepted developer answer, Steam thread, 3 Sep 2026).</li>
                     <li><strong>Carry a potion whose puzzle you have not solved yet.</strong> The hint needs an unsolved board to work on.</li>
                     <li><strong>Interact with the cat, then switch from the Upgrade tab to the other tab of the menu</strong> and take the top option there — the one called &quot;Mark puzzle pieces&quot;. The menu opens on the Upgrade window, which is why the working option is easy to miss.</li>
                   </ul>
                   <p>
-                    One more warning: this achievement is effectively <strong>missable</strong>. If you have already solved every puzzle in the workshop, no unsolved board remains for the hint to act on — the player who shared the method notes you would have to wait for another playthrough. So if you are chasing all 24, use your first hint deliberately while puzzles are still open.
+                    The greyed-out hint buttons themselves are not broken, either — the thread that drew the developer answer started because a player who had finished the game saw two locked options displaying <strong>&quot;12/30&quot;</strong> and <strong>&quot;12/50&quot;</strong>. Those counters are your completed-shelf count against each hint&apos;s unlock threshold: the highlight hint unlocks at 30 shelves, and the reveal hint at 50 (the 50 is read off the counter pair itself — the developer confirmed the 30; the 50 is our inference). If your buttons are grey with a low first number, the answer is simply more shelving.
+                  </p>
+                  <p>
+                    One more warning: this achievement is effectively <strong>missable</strong>. If you have already solved every puzzle in the workshop, no unsolved board remains for the hint to act on — the player who shared the method notes you would have to wait for another playthrough. So if you are chasing all 24, use your first hint deliberately while puzzles are still open. Even completionists hit this wall from the other side: a 3 Sep 2026 review from a player who reached 100% in under seven hours without using a single skill says figuring out how to unlock <em>&quot;Hooman needs help :)&quot;</em> was the part that stumped them longest.
                   </p>
                   <p className="source-note">
-                    Source: Steam discussion &quot;How do you unlock Hooman need help?&quot; (26–27 Aug 2026), accepted answer plus a corroborating reply. Steps are community-verified, not retested by us in-game.
+                    Source: Steam discussions &quot;How do you unlock Hooman need help?&quot; (26–27 Aug 2026, accepted community answer plus a corroborating reply) and &quot;I can&apos;t ask cats for hints?&quot; (2–3 Sep 2026) — the 30-shelf rule is developer-confirmed in the latter via the accepted answer; the 50-shelf reveal threshold is inferred from the on-screen counters. Remaining steps are community-verified, not retested by us in-game.
                   </p>
                 </section>
                 <section id="no-abilities" className="article-section article-callout">
@@ -384,8 +405,8 @@ export default async function HelpPage({ params }: PageProps) {
                 <li>Three-tier cat help description: official Steam store listing for Shelve the Potions!</li>
                 <li>Assemble behaviour and ability cooldowns: developer reply in the Steam discussion &quot;How to use Assemble ability?&quot; and official patch notes v1.0.10–v1.0.11 (Steam Community announcements).</li>
                 <li>Accidental-trigger reports and rebinding advice: Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
-                <li>&quot;Hooman needs help :)&quot; unlock steps: Steam discussion &quot;How do you unlock Hooman need help?&quot; (accepted community answer, 26–27 Aug 2026), with the Upgrade-tab / &quot;Mark puzzle pieces&quot; menu path from a 27 Aug reply in the same thread.</li>
-                <li>&quot;Cat lady&quot; petting method (hold the cursor) and Sir Meowsir&apos;s fireplace barrel: developer replies in the Steam discussion &quot;Catlady achievement&quot; (29–31 Aug 2026).</li>
+                <li>&quot;Hooman needs help :)&quot; unlock steps: Steam discussion &quot;How do you unlock Hooman need help?&quot; (accepted community answer, 26–27 Aug 2026), with the Upgrade-tab / &quot;Mark puzzle pieces&quot; menu path from a 27 Aug reply in the same thread. The 30-shelf threshold is developer-confirmed: accepted developer answer in &quot;I can&apos;t ask cats for hints?&quot; (3 Sep 2026); the 50-shelf reveal threshold is inferred from that thread&apos;s X/50 counter.</li>
+                <li>&quot;Cat lady&quot; petting method (hold the cursor) and Sir Meowsir&apos;s fireplace barrel: developer replies in the Steam discussion &quot;Catlady achievement&quot; (29 Aug – 3 Sep 2026). The nine other cat names/locations are the OP&apos;s 3 Sep player-reported first-hand list from that thread; the Steam Deck petting sentence is the developer&apos;s 3 Sep reply, quoted verbatim with our interpretation noted.</li>
                 <li>No in-game retest has been done for this article; we label it accordingly and will update it once verified.</li>
               </ul>
             </section>
