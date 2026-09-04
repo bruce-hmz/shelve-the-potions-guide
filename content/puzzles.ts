@@ -219,11 +219,13 @@ export const puzzleGuides: PuzzleGuide[] = [
       { title: "Count leaves per flower", text: "Zoom if needed and count the leaves attached to each flower. Photographing the display makes this much easier than eyeballing it live." },
       { title: "Pair color with leaf count", text: "Treat each flower as a two-part key: first match its color group then sub-order by leaf count within that color." },
       { title: "If rejected twice ask the cat", text: "Multiple players report retry loops after the answer hint. At that point letting the cat inspect one potion usually resets the check and highlights the mismatched bottle." },
+      { title: "Certain the order is right but it keeps saying wrong?", text: "The developer confirmed this is the wrong-order rejection, not a bug: \"if it says its wrong then your solution to the puzzle is wrong\" — re-verify the two-part key (color plus leaf count for every flower) and try again, because one miscount rejects the whole shelf. The cat hint can help while the board is still unsolved, but not once flowers are placed — that is the missing-flower case below. The developer declined to share the sequence and pointed players to the cat or community guides, which is why this page stays methodology-only." },
       { title: "Already solved but a flower seems missing?", text: "That flower is not lost. Placed flowers cannot be picked back up and the cat hint only works while the board is unsolved — the week 7/8 flower is lying on its side near the weather globe, where it reads as a random potion. Our missing potions guide has the full story." },
     ],
     mistakes: [
       "Sorting by color alone without counting the leaves.",
       "Miscounting one flower by a single leaf and having the entire shelf reject.",
+      "Assuming the shelf is bugged after a confident order is rejected — the developer confirmed a 'wrong' message always means the order is wrong, so re-count every flower's leaves instead of restarting the game.",
       "Ignoring the cat inspection fallback after repeated failures.",
       "Hunting for a lost week 7/8 flower after the shelf is already solved — it is on its side near the weather globe, not in a hiding spot.",
     ],

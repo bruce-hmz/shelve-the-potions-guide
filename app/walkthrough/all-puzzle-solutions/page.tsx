@@ -211,7 +211,7 @@ export default function AllSolutionsPage() {
               </p>
               <ul className="mistake-list" style={{ listStyle: "none" }}>
                 <li><strong>The green/red flash on placement.</strong> The shelf flashes when bottles go down — the same accept/reject feedback you already know from sorting, read across the whole board.</li>
-                <li><strong>Hold Tab with a potion in hand.</strong> Boards you have not finished bring up their solution overlay; if nothing appears for a shelf, that shelf is already done.</li>
+                <li><strong>Hold Tab with a potion in hand.</strong> Boards you have not finished bring up their solution overlay; if nothing appears for a shelf, that shelf is already done. On controller the equivalent is <strong>up on the D-pad</strong> — it shows the solution reminder for the set you are holding (player-confirmed in a Steam tips thread, 3 Sep 2026).</li>
                 <li><strong>The Esc pause screen shows your progress.</strong> The least spoiler-prone option and the first one to try.</li>
                 <li><strong>The third keybind ability</strong> — the one that unlocks at the 40-shelf milestone — can be used as the in-game check, but it is the only method of the four that counts as an ability: asked directly, the developer confirmed that using the highlight voids the no-abilities achievement — &quot;Sadly it&apos;ll block the achievement, as it&apos;s a magic ability&quot; — so it stays off the table during the run, and the <Link href="/help/abilities-and-hints/">disable-abilities toggle</Link> is what turns an accidental misfire into an impossibility.</li>
               </ul>
@@ -219,7 +219,7 @@ export default function AllSolutionsPage() {
                 There is no persistent completed-shelf indicator in the game yet — players have asked the developer for one in the same thread. Until that ships, the Tab hold is the quickest routine: sweep the room once with a bottle in hand and note which shelves stay silent. And if the sweep itself is the problem — stuttering frames or a jittery mouse — our <a href="/help/settings-and-comfort/#performance">settings &amp; comfort guide</a> covers the frame-rate fix players have measured.
               </p>
               <p className="source-note">
-                Source: Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026, six participants). Community-verified methods; we have not retested them in-game. The ruling that the highlight voids the no-abilities achievement is developer-confirmed: official feedback sticky, 25 Aug 2026.
+                Source: Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026, six participants). Community-verified methods; we have not retested them in-game. The ruling that the highlight voids the no-abilities achievement is developer-confirmed: official feedback sticky, 25 Aug 2026. The controller D-pad-up solution reminder: player reply in the Steam tips thread &quot;Quick tip for sequences&quot;, 3 Sep 2026.
               </p>
             </section>
 
@@ -246,7 +246,7 @@ export default function AllSolutionsPage() {
                 <li>Puzzle grouping and uncovered board names: community puzzle guides cross-checked against Steam discussion threads, Aug 2026.</li>
                 <li>Greek-letter vial clue location and order: Steam discussion &quot;Where&apos;s the greek potions clue?&quot; with developer replies, cross-checked against community guides.</li>
                 <li>Compass and runes sequences shown as community leads: public player guides — pending our own verification before they move to guide pages.</li>
-                <li>Completed-shelf check (Tab hold, placement flash, pause screen, 40-shelf ability): Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026). Highlight-blocks-achievement ruling: developer reply in the official feedback sticky (25 Aug 2026).</li>
+                <li>Completed-shelf check (Tab hold, placement flash, pause screen, 40-shelf ability): Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026). Highlight-blocks-achievement ruling: developer reply in the official feedback sticky (25 Aug 2026). Controller D-pad-up solution reminder: player reply, Steam tips thread (3 Sep 2026).</li>
                 <li>Patch readability change for the card board: official day-one patch notes v1.0.9.</li>
               </ul>
             </section>
