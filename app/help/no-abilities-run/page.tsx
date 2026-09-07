@@ -66,7 +66,7 @@ const faqJsonLd = {
       name: "Do ability upgrades count as using abilities in Shelve the Potions?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The community answer is no — buying upgrades is a purchase, not a use. This is player consensus rather than a developer ruling; the developer's advice in the same thread is to enable the v1.0.11 disable-abilities toggle for a risk-free run.",
+        text: "No — and it is developer-confirmed: asked in the Steam 'no magic run for the achievement' thread (7 Sep 2026) whether buying skill upgrades is allowed during the run, the developer answered, 'you can upgrade whatever you like just don't use magic'. Buying an upgrade is a purchase, not a use. The developer also recommends the v1.0.11 disable-abilities toggle so a misclick cannot fire an ability mid-run.",
       },
     },
     {
@@ -146,7 +146,7 @@ export default function NoAbilitiesRunPage() {
               <h2>What counts as an ability — and what is safe</h2>
               <ul className="check-list">
                 <li><CheckIcon /><span><strong>Safe: petting cats.</strong> <em>&quot;Curious Cat&quot;</em> and <em>&quot;Cat lady&quot;</em> only need petting, and players reliably earn both on no-ability runs. Keep petting.</span></li>
-                <li><CheckIcon /><span><strong>Safe: buying upgrades.</strong> <em>&quot;Hello improvements.&quot;</em> and <em>&quot;I need all the help I can get ok!&quot;</em> are purchase achievements, not ability uses.</span></li>
+                <li><CheckIcon /><span><strong>Safe: buying upgrades.</strong> <em>&quot;Hello improvements.&quot;</em> and <em>&quot;I need all the help I can get ok!&quot;</em> are purchase achievements, not ability uses — and the developer confirmed the rule directly: &quot;you can upgrade whatever you like just don&apos;t use magic.&quot;</span></li>
                 <li><CheckIcon /><span><strong>Not safe: asking a cat for anything.</strong> Point, highlight, reveal — the whole menu. One use ends the run.</span></li>
                 <li><CheckIcon /><span><strong>Not safe: the keybind abilities</strong> (highlight, Assemble, reveal). The highlight one is developer-confirmed — asked whether the shelf-highlight voids the achievement, the developer answered, &quot;Sadly it&apos;ll block the achievement, as it&apos;s a magic ability&quot; — and with the v1.0.11 toggle on none of them can fire at all.</span></li>
               </ul>
@@ -179,7 +179,7 @@ export default function NoAbilitiesRunPage() {
                 <li>
                   <CheckIcon />
                   <span>
-                    <strong>Do ability upgrades count as using abilities?</strong> The community answer in the Steam &quot;ability usage?&quot; thread (28 Aug 2026) is <strong>no</strong> — buying an upgrade is a purchase, the same category as the two purchase achievements, while a &quot;use&quot; means actually triggering something: asking a cat for help or firing a keybind ability. Two honesty notes: that reading is <em>player consensus, not a developer ruling</em> — when the same thread reached the developer, the advice was simply to enable the v1.0.11 disable-abilities toggle for an easier achievement — and one player in that thread lost the achievement to a single accidental use on an unpatched run, so the margin for error is zero. If your run is too valuable to bet on an interpretation, flip the toggle (see <a href="#setup">step 1</a>) and the question never comes up.
+                    <strong>Do ability upgrades count as using abilities?</strong> <strong>No</strong> — and this is now <em>developer-confirmed</em>, not just community consensus: asked in the Steam &quot;no magic run for the achievement&quot; thread (7 Sep 2026) whether buying skill upgrades is allowed during the run, the developer answered, &quot;you can upgrade whatever you like just don&apos;t use magic.&quot; Buying an upgrade is a purchase, the same category as the two purchase achievements, while a &quot;use&quot; means actually triggering something: asking a cat for help or firing a keybind ability. One warning survives from the earlier &quot;ability usage?&quot; thread (28 Aug 2026): a player there lost the achievement to a single accidental use on an unpatched run, so on an unprotected run the margin for error is still zero. The disable toggle (see <a href="#setup">step 1</a>) removes the risk entirely — the developer recommends it in the same reply, &quot;there is also an option in to toggle magic off to not misclick it.&quot;
                   </span>
                 </li>
                 <li>
@@ -204,7 +204,7 @@ export default function NoAbilitiesRunPage() {
                 <li>Disable-abilities toggle behaviour and intent: official patch notes v1.0.11 (26 Aug 2026).</li>
                 <li>Highlight-ability ruling (&quot;Sadly it&apos;ll block the achievement, as it&apos;s a magic ability&quot;): developer reply in the official Steam feedback sticky, 25 Aug 2026.</li>
                 <li>Pre-patch failure modes (silent unlocks, lost runs, d-pad binding, force-quit rollback): Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
-                <li>Upgrade-vs-use boundary question, the community &quot;No&quot; answer, and the developer&apos;s toggle recommendation: Steam discussion thread &quot;ability usage?&quot; (28–30 Aug 2026).</li>
+                <li>Upgrade-vs-use boundary: the community &quot;No&quot; answer in Steam thread &quot;ability usage?&quot; (28–30 Aug 2026), now developer-confirmed in Steam thread &quot;no magic run for the achievement&quot; (7 Sep 2026) — &quot;you can upgrade whatever you like just don&apos;t use magic&quot;, with the disable toggle recommended against misclicks. The accidental-use loss reported in the 28 Aug thread stands as the warning case.</li>
                 <li>Controller keybind conflict (solution view sharing a button with a magic ability): negative Steam review, 27 Aug 2026 — single player report, not developer-confirmed; we label it as such and point to the toggle as the guaranteed fix.</li>
                 <li>Petting-vs-asking separation: community reports consistent with Steam achievement text; we label it conservative guidance rather than a datamined rule.</li>
               </ul>
