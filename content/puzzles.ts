@@ -420,6 +420,7 @@ export const puzzleGuides: PuzzleGuide[] = [
       "No fixed sequence to publish — the correct order is your own count. The counting difficulty is real: the developer's feedback thread collected requests for a counter because shapes are hard to distinguish even zoomed.",
     steps: [
       { title: "Pick one bottle at a time", text: "Take the leftmost unplaced bottle and follow its outline corner by corner, counting out loud or on paper." },
+      { title: "Can't see the shapes clearly?", text: "Some bottles carry their embedded objects (corner nubs, petals) inside dark liquid, where they are barely visible — zoom in before counting (Ctrl on keyboard, right stick on controller; both developer-confirmed, and collected in our settings & comfort guide). A widely watched playthrough notes that lighter liquids show the embedded contents more clearly than dark ones (player-observed, not a developer statement), so expect the darkest bottles to need the closest look." },
       { title: "Write the counts down", text: "Note each bottle's count before placing anything. Correcting a miscount after the shelf rejects is far slower than writing four numbers down first." },
       { title: "Sort ascending", text: "Place the bottles from the lowest count to the highest." },
       { title: "If rejected, re-count the middle bottles", text: "Players report single miscounts reject the whole shelf; the middle of your order is the usual suspect because similar shapes sit there." },
