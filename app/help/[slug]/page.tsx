@@ -326,8 +326,11 @@ export default async function HelpPage({ params }: PageProps) {
                   <p>
                     Patch v1.0.10 added another upgrade level for Assemble (and for the highlight ability) that lowers its cooldown to 40 seconds, so a fully upgraded Assemble can fire roughly twice a minute.
                   </p>
+                  <p>
+                    Two further details are player-reported — the developer has not confirmed either. First, the pull appears to cap at <strong>5 potions</strong> even when the set has 8, which more than one player names as the spell&apos;s biggest weakness. Second, the bottles arrive in a <strong>fixed sequence order</strong>: two players independently describe the order as deterministic (one as lowest-to-highest, another as the held bottle first and then the rest of the sequence), which doubles as a crude hand-sorting trick — re-summon a set and your hand is effectively ordered for that shelf.
+                  </p>
                   <p className="source-note">
-                    Source: developer reply in the Steam discussion &quot;How to use Assemble ability?&quot; (27 Aug 2026) and official patch notes v1.0.10. Not retested by us in-game.
+                    Source: developer reply in the Steam discussion &quot;How to use Assemble ability?&quot; (27 Aug 2026) and official patch notes v1.0.10. The 5-potion cap and the deterministic arrival order are player-reported: Steam discussion &quot;Only negative feedback&quot; (27 Aug 2026) and Steam reviews from 6–8 Sep 2026; the two descriptions of the order differ slightly. Not retested by us in-game.
                   </p>
                 </section>
                 <section id="when-to-use" className="article-section">
@@ -404,6 +407,7 @@ export default async function HelpPage({ params }: PageProps) {
                 <li>Achievement names, descriptions, and global unlock percentages: Steam Community global stats page for app 4928820.</li>
                 <li>Three-tier cat help description: official Steam store listing for Shelve the Potions!</li>
                 <li>Assemble behaviour and ability cooldowns: developer reply in the Steam discussion &quot;How to use Assemble ability?&quot; and official patch notes v1.0.10–v1.0.11 (Steam Community announcements).</li>
+                <li>Gather-spell 5-potion cap and deterministic arrival order (hand-sorting trick): Steam discussion &quot;Only negative feedback&quot; (27 Aug 2026) and Steam reviews 6–8 Sep 2026 — player-reported, not developer-confirmed.</li>
                 <li>Accidental-trigger reports and rebinding advice: Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
                 <li>&quot;Hooman needs help :)&quot; unlock steps: Steam discussion &quot;How do you unlock Hooman need help?&quot; (accepted community answer, 26–27 Aug 2026), with the Upgrade-tab / &quot;Mark puzzle pieces&quot; menu path from a 27 Aug reply in the same thread. The 30-shelf threshold is developer-confirmed: accepted developer answer in &quot;I can&apos;t ask cats for hints?&quot; (3 Sep 2026); the 50-shelf reveal threshold is inferred from that thread&apos;s X/50 counter.</li>
                 <li>&quot;Cat lady&quot; petting method (hold the cursor) and Sir Meowsir&apos;s fireplace barrel: developer replies in the Steam discussion &quot;Catlady achievement&quot; (29 Aug – 3 Sep 2026). The nine other cat names/locations are the OP&apos;s 3 Sep player-reported first-hand list from that thread; the Steam Deck petting sentence is the developer&apos;s 3 Sep reply, quoted verbatim with our interpretation noted.</li>
