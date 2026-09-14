@@ -113,7 +113,7 @@ export const puzzleGuides: PuzzleGuide[] = [
     steps: [
       { title: "Locate displaced pieces", text: "Scan the perimeter outside the chess shelf: corners, window sills, desks, and around shelves are the recurring hiding spots Steam players report." },
       { title: "Restore the board", text: "Return the lost pieces before interpreting the position." },
-      { title: "Check behind the white cat", text: "Multiple Steam threads converge on this spot: the white bishop blends into the cat and plant pots on the left just after leaving the tutorial room. Pieces are larger than expected once spotted." },
+      { title: "Check behind the white cat", text: "Multiple Steam threads converge on this spot: the final white bishop sits on the work bench behind the white cat, next to the potted rainbow plant, just left of the tutorial-room exit. Players report walking past it hundreds of times — the cat model covers most of the bishop on mouseover, and the shine particles around the piece are easy to dismiss (both player-reported). Pieces are larger than expected once spotted." },
       { title: "Inspect the eight taken pieces", text: "Use the remaining captured-piece pattern as the clue described by the current source." },
       { title: "Ask the cat if stuck", text: "Steam players also recommend letting a cat highlight a missing item rather than force-killing the game to undo a wrong guess." },
       { title: "Stop before guessing", text: "The final placement is not sufficiently documented; use the cat hint rather than inventing a conventional chess tactic." },
