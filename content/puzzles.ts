@@ -320,6 +320,7 @@ export const puzzleGuides: PuzzleGuide[] = [
       "Reported in a Steam discussion and matched by an independent community guide — the strongest community corroboration of any provisional sequence on this site, but still not reproduced by us in-game.",
     steps: [
       { title: "Go behind the desk", text: "The four storybooks sit on the desk surface behind the main working area; walk around if the camera blocks them." },
+      { title: "Can't find one of the storybooks?", text: "If the desk from step 1 is not enough, scan the floor along the halls too — a player hunting this exact second book found theirs \"lying on the floor mixed up between a bunch of potions\" (15 Sep 2026 community answer; player-reported, not developer-confirmed). That is the same displaced-object pattern as the week 7/8 flower in our missing-potions guide. While the board is still unsolved you can also hold a potion from the rune set and ask a cat to highlight what is still needed — the developer-endorsed fallback our clock guide uses for the missing clock hand." },
       { title: "Note the page numbers", text: "Each book sits open to a different page. Zoom or photograph so you can read every number." },
       { title: "Match runes to pages", text: "Treat each bottle's rune as a page marker and order the bottles by the storybooks' page numbers." },
       { title: "Check the shorthand below", text: "Reveal the community sequence only after deriving your own order from the books." },

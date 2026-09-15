@@ -107,7 +107,7 @@ export default function MissingPotionsPage() {
             <section id="hiding" className="article-section">
               <h2>Where bottles like to hide</h2>
               <p>
-                Before you respawn, it is worth one slow lap of the room. The recurring hiding spots players report for loose objects are the edges of the workshop: <strong>corners, window sills, desks, and the shelves around the room&apos;s perimeter</strong> — the same places the displaced chess pieces turn up. Small items are also larger than they first look once you actually spot them, so check around the cats too: one white cat near the start of the workshop is famously hiding a chess bishop. Our <Link href="/puzzles/chess-pieces/">chess pieces guide</Link> has that one in detail.
+                Before you respawn, it is worth one slow lap of the room. The recurring hiding spots players report for loose objects are the edges of the workshop: <strong>corners, window sills, desks, and the shelves around the room&apos;s perimeter</strong> — the same places the displaced chess pieces turn up. Small items are also larger than they first look once you actually spot them, so check around the cats too: one white cat near the start of the workshop is famously hiding a chess bishop. Our <Link href="/puzzles/chess-pieces/">chess pieces guide</Link> has that one in detail. Clue objects get displaced too, and not only onto furniture: a player looking for the rune shelf&apos;s second storybook found it <strong>lying on the floor among potion piles</strong> — the <Link href="/puzzles/runes-books/">runes &amp; storybooks guide</Link> covers that search.
               </p>
             </section>
 
@@ -169,6 +169,7 @@ export default function MissingPotionsPage() {
                 <li>Hiding spots and the white-cat chess bishop: converging reports in Steam discussion threads (Aug 2026).</li>
                 <li>Week 7/8 flower location and the solved-puzzle hint limit: Steam discussion &quot;Missing flower&quot; (28 Aug 2026), developer and community replies.</li>
                 <li>Crash-stuck shelf slots (full-restart fix) and the Assemble-fail missing-potion report: Steam discussions &quot;Potions stuck between shelves&quot; (1 Sep 2026) and &quot;missing potion&quot; (3 Sep 2026, resolved by its opener on 5 Sep 2026 — the potion shared a shelf slot with another bottle); the two-minute autosave interval is from the developer&apos;s pinned FAQ thread.</li>
+                <li>The displaced storybook found on the floor among potion piles: Steam thread &quot;Can&apos;t find the second book&quot; (14–15 Sep 2026, community answer, not retested by us).</li>
                 <li>No in-game retest has been done for this article; details are labelled accordingly.</li>
               </ul>
             </section>
