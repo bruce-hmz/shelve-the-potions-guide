@@ -105,7 +105,10 @@ export default function FirstRoomPage() {
                 The game opens by teaching movement — walk around, that is about it. A dozen players on the Steam forum described the same trap afterwards: they assumed the movement lesson was the whole tutorial, because the <strong>objective checklist on the left side of the screen</strong> is easy to miss and refreshes without any visual cue. Players reported finishing objectives without noticing new ones had appeared, then standing in the room unsure what &quot;finishing the tutorial&quot; even means.
               </p>
               <p>
-                The practical habit: after every task you complete, look back at the checklist. If it has grown, the game has quietly given you your next step. Finishing the listed objectives is what ends the tutorial — there is no separate exit puzzle to solve, which is exactly why the room confuses people.
+                The practical habit: after every task you complete, look back at the checklist. If it has grown, the game has quietly given you your next step. Finishing the listed objectives is what ends the tutorial — there is no separate exit puzzle to solve, which is exactly why the room confuses people. The door out of the first room only opens once <strong>every checklist item is done</strong>: the player who started the &quot;How do you get out of the first room?&quot; thread had shelved every rack and still could not leave, for precisely this reason.
+              </p>
+              <p>
+                <strong>Can&apos;t see the checklist at all?</strong> Two rarer causes are on record. If no list renders on the left side of the screen even with the HUD on, the launch-era reporter above fixed it by starting a <strong>new game</strong> — the checklist appeared after the reset (player-reported fix from the same thread, not a developer-confirmed one). And if you switched the HUD off in the options menu, switch it back on: hiding the HUD also hides the tutorial prompts, which is what left one player stuck on the zoom-then-drop-potion step in a 7 September review.
               </p>
             </section>
 
@@ -160,6 +163,7 @@ export default function FirstRoomPage() {
                 <li>Checklist behaviour and the bottle number + element icon mechanic: Steam Community reports from new-player threads (Aug 2026).</li>
                 <li>Potion respawning, cat hints, autosave interval, and Steam Cloud: pinned developer FAQ and official store copy, app 4928820.</li>
                 <li>White chess bishop behind the white cat: multiple converging Steam discussion posts.</li>
+                <li>Invisible-checklist troubleshooting: launch-era thread &quot;How do you get out of the first room?&quot; (Aug 2026, developer reply plus the player-reported new-game fix) and a 7 Sep 2026 Steam review describing the hidden-HUD variant.</li>
                 <li>We have not retested the tutorial room in-game; details are labelled accordingly and will be refined after a first-hand pass.</li>
               </ul>
             </section>
