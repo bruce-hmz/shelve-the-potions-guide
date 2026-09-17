@@ -279,7 +279,7 @@ export default async function HelpPage({ params }: PageProps) {
                     The rarest achievement in the list at about <strong>4.5%</strong> unlock rate, and the only one that demands a playstyle decision: finish the game without ever using an ability. At launch this run was genuinely risky — abilities unlocked silently as shelves filled, and one mispress plus autosave ended hours of work. Since patch v1.0.11 there is an options-menu toggle that disables magic abilities outright, and the developer&apos;s patch note says it exists &quot;to easily get the last achievement&quot;.
                   </p>
                   <p>
-                    Short version: flip the toggle before you start, play on a save where you have never asked a cat for help, and keep petting cats — that part is safe. The full step-by-step plan, including what counts as an ability and what to do when stuck, lives in our <a href="/help/no-abilities-run/">no-abilities run guide</a>.
+                    Short version: flip the toggle before you start, never fire a keybind ability, and keep petting cats — asking a cat for hints is safe too, per the developer&apos;s 17 Sep 2026 ruling (&quot;no it doesn&apos;t count as an ability&quot;). The full step-by-step plan, including what counts as an ability and what to do when stuck, lives in our <a href="/help/no-abilities-run/">no-abilities run guide</a>.
                   </p>
                 </section>
               </>

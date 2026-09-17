@@ -77,6 +77,14 @@ const faqJsonLd = {
         text: "On controller, one player reports exactly that: the binding that shows a completed puzzle's solution shares a button with a magic ability, so checking a solved board triggered the ability and ended the run. Verify your bindings before starting — move ability keys away from anything you press routinely — or remove the risk entirely with the v1.0.11 disable-abilities toggle.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Does asking a cat for a hint void the no-abilities achievement?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No — developer-confirmed on 17 Sep 2026 in the Steam 'no abilities achievement' thread: asked whether getting help from the cat counts as an ability, the developer answered, 'no it doesn't count as an ability, and make sure to toggle disable abilities in the options to make it easier to get'. Cat hints are safe on a no-abilities run, so 'Hooman needs help :)' and the no-abilities achievement can be earned on the same save. One untested edge: how the cat menu behaves while the disable-abilities toggle is switched on — keep the toggle on and ask normally; if the menu appears blocked, ask before enabling it.",
+      },
+    },
   ],
 };
 
@@ -96,7 +104,7 @@ export default function NoAbilitiesRunPage() {
             <div className="quick-answer">
               <span>Quick answer</span>
               <p>
-                About <strong>4.5%</strong> of players have it. The recipe: enable the <strong>disable-abilities toggle in the options menu</strong> (added in patch v1.0.11), play on a save where you have <strong>never asked a cat for help</strong>, and solve every shelf from clue reading alone. Petting cats stays safe. That is the whole run — the guide below explains why each rule exists.
+                About <strong>4.5%</strong> of players have it. The recipe: enable the <strong>disable-abilities toggle in the options menu</strong> (added in patch v1.0.11), never fire a keybind ability, and solve every shelf from clue reading alone. Asking cats for hints is safe too — the developer confirmed cat help &quot;doesn&apos;t count as an ability&quot; (17 Sep 2026). That is the whole run — the guide below explains why each rule exists.
               </p>
             </div>
             <ArticleTrust />
@@ -120,7 +128,7 @@ export default function NoAbilitiesRunPage() {
             <section id="what" className="article-section article-section--first">
               <h2>What the achievement actually asks</h2>
               <p>
-                Steam&apos;s text says only &quot;finish the game without using any abilities&quot;. It does not define which interactions count, and the game itself never warns you — abilities simply unlock as you fill shelves, sometimes without much fanfare. The community consensus, and our recommendation, is the conservative reading: <strong>every magical-cat interaction counts except petting</strong>. The full achievement list lives in our <Link href="/help/achievements/">achievements guide</Link>.
+                Steam&apos;s text says only &quot;finish the game without using any abilities&quot;. It does not define which interactions count, and the game itself never warns you — abilities simply unlock as you fill shelves, sometimes without much fanfare. Two developer rulings (Aug–Sep 2026) have now settled the question: the <strong>keybind spells count</strong> (highlight, Assemble, reveal), while <strong>asking a cat for hints does not</strong> — &quot;no it doesn&apos;t count as an ability.&quot; The full achievement list lives in our <Link href="/help/achievements/">achievements guide</Link>.
               </p>
             </section>
 
@@ -133,7 +141,7 @@ export default function NoAbilitiesRunPage() {
                 </li>
                 <li>
                   <span>02</span>
-                  <div><strong>Start from a hint-free save</strong><p>The run requires never having used an ability on that save. If you already asked a cat for help in your current save, do this achievement on a fresh one — the opposite achievement, <em>&quot;Hooman needs help :)&quot;</em>, is a good reason to keep a second playthrough anyway (mind its own unlock conditions in our achievements guide).</p></div>
+                  <div><strong>Pair it with &quot;Hooman needs help :)&quot; on one save</strong><p>The run requires never having fired an ability on that save — but cat help no longer forces a fresh one. The developer confirmed (17 Sep 2026) that asking a cat &quot;doesn&apos;t count as an ability&quot;, so no-abilities and <em>&quot;Hooman needs help :)&quot;</em> can be earned on the same playthrough — ask away, then get back to sorting. Mind Hooman&apos;s own rules when you do: 30 completed shelves before the cat will help, and ask while holding a potion whose puzzle is still unsolved (both covered in our achievements guide). A save where a keybind ability has already fired is still out — that part has not changed.</p></div>
                 </li>
                 <li>
                   <span>03</span>
@@ -147,7 +155,7 @@ export default function NoAbilitiesRunPage() {
               <ul className="check-list">
                 <li><CheckIcon /><span><strong>Safe: petting cats.</strong> <em>&quot;Curious Cat&quot;</em> and <em>&quot;Cat lady&quot;</em> only need petting, and players reliably earn both on no-ability runs. Keep petting.</span></li>
                 <li><CheckIcon /><span><strong>Safe: buying upgrades.</strong> <em>&quot;Hello improvements.&quot;</em> and <em>&quot;I need all the help I can get ok!&quot;</em> are purchase achievements, not ability uses — and the developer confirmed the rule directly: &quot;you can upgrade whatever you like just don&apos;t use magic.&quot;</span></li>
-                <li><CheckIcon /><span><strong>Not safe: asking a cat for anything.</strong> Point, highlight, reveal — the whole menu. One use ends the run.</span></li>
+                <li><CheckIcon /><span><strong>Safe: asking a cat for hints.</strong> Point, highlight, reveal — the whole cat menu is fine. Developer-confirmed 17 Sep 2026: asked whether getting help from the cat counts as an ability, the developer answered, &quot;no it doesn&apos;t count as an ability.&quot; A bonus: this also means <em>&quot;Hooman needs help :)&quot;</em> and this achievement can share one save (see <a href="#setup">step 2</a>).</span></li>
                 <li><CheckIcon /><span><strong>Not safe: the keybind abilities</strong> (highlight, Assemble, reveal). The highlight one is developer-confirmed — asked whether the shelf-highlight voids the achievement, the developer answered, &quot;Sadly it&apos;ll block the achievement, as it&apos;s a magic ability&quot; — and with the v1.0.11 toggle on none of them can fire at all.</span></li>
               </ul>
             </section>
@@ -155,7 +163,7 @@ export default function NoAbilitiesRunPage() {
             <section id="midrun" className="article-section">
               <h2>Stuck mid-run?</h2>
               <p>
-                Do not break the run — use the clue ladder instead. Open the relevant puzzle guide and stop at the first level that unsticks you: a <Link href="/walkthrough/">hint</Link> pointing at the right object, the sorting rule, and only then the (clearly labelled, often still provisional) solution. The <Link href="/walkthrough/all-puzzle-solutions/">all-puzzle-solutions hub</Link> tells you which boards have verified answers and which are still community leads.
+                Being stuck no longer forces a choice: asking the in-game cat for a hint is achievement-safe (developer-confirmed — see <a href="#faq">the FAQ</a>). If you would rather not be spoiled, use the clue ladder instead. Open the relevant puzzle guide and stop at the first level that unsticks you: a <Link href="/walkthrough/">hint</Link> pointing at the right object, the sorting rule, and only then the (clearly labelled, often still provisional) solution. The <Link href="/walkthrough/all-puzzle-solutions/">all-puzzle-solutions hub</Link> tells you which boards have verified answers and which are still community leads.
               </p>
               <p>
                 If you are one bottle short, our <Link href="/help/missing-potions/">missing potions guide</Link> covers the pause-menu respawn — no abilities required. And if a shelf keeps rejecting an order that looks right, the flower and runes boards are known for punishing a single miscount; the guide for each board lists its common mistakes.
@@ -179,13 +187,19 @@ export default function NoAbilitiesRunPage() {
                 <li>
                   <CheckIcon />
                   <span>
-                    <strong>Do ability upgrades count as using abilities?</strong> <strong>No</strong> — and this is now <em>developer-confirmed</em>, not just community consensus: asked in the Steam &quot;no magic run for the achievement&quot; thread (7 Sep 2026) whether buying skill upgrades is allowed during the run, the developer answered, &quot;you can upgrade whatever you like just don&apos;t use magic.&quot; Buying an upgrade is a purchase, the same category as the two purchase achievements, while a &quot;use&quot; means actually triggering something: asking a cat for help or firing a keybind ability. One warning survives from the earlier &quot;ability usage?&quot; thread (28 Aug 2026): a player there lost the achievement to a single accidental use on an unpatched run, so on an unprotected run the margin for error is still zero. The disable toggle (see <a href="#setup">step 1</a>) removes the risk entirely — the developer recommends it in the same reply, &quot;there is also an option in to toggle magic off to not misclick it.&quot;
+                    <strong>Do ability upgrades count as using abilities?</strong> <strong>No</strong> — and this is now <em>developer-confirmed</em>, not just community consensus: asked in the Steam &quot;no magic run for the achievement&quot; thread (7 Sep 2026) whether buying skill upgrades is allowed during the run, the developer answered, &quot;you can upgrade whatever you like just don&apos;t use magic.&quot; Buying an upgrade is a purchase, the same category as the two purchase achievements, while a &quot;use&quot; means actually firing one of the keybind abilities — asking a cat for help is <em>not</em> a use, as the developer confirmed on 17 Sep 2026 (<a href="#faq">next question</a>). One warning survives from the earlier &quot;ability usage?&quot; thread (28 Aug 2026): a player there lost the achievement to a single accidental use on an unpatched run, so on an unprotected run the margin for error is still zero. The disable toggle (see <a href="#setup">step 1</a>) removes the risk entirely — the developer recommends it in the same reply, &quot;there is also an option in to toggle magic off to not misclick it.&quot;
                   </span>
                 </li>
                 <li>
                   <CheckIcon />
                   <span>
                     <strong>On controller, can a run die to a keybind that is not an ability?</strong> One 27 Aug Steam review says yes: the binding that <strong>shows a completed puzzle&apos;s solution shares a button with a magic ability</strong>, so simply checking a solved board fired the ability and voided a 12-hour run. This is a single player report, not a developer-confirmed binding table — but the insurance is cheap either way: before starting, open the control options and confirm no ability shares a button you press for anything routine (the community&apos;s I-O-P spread in <a href="#legacy">the pre-patch notes</a> is exactly this insurance), or remove the possibility entirely with the v1.0.11 <a href="#setup">disable toggle</a>.
+                  </span>
+                </li>
+                <li>
+                  <CheckIcon />
+                  <span>
+                    <strong>Does asking a cat for a hint void the no-abilities achievement?</strong> <strong>No.</strong> Asked directly in the Steam &quot;no abilities achievement&quot; thread (17 Sep 2026), the developer answered, &quot;no it doesn&apos;t count as an ability, and make sure to toggle disable abilities in the options to make it easier to get.&quot; Cat hints are safe on this run — and pairing it with <em>&quot;Hooman needs help :)&quot;</em> on one save works (<a href="#setup">step 2</a>). One edge we have not tested: how the cat menu behaves while the disable-abilities toggle is switched on. The sensible play is to keep the toggle on and ask normally; if the menu turns out to be blocked on your build, ask before enabling the toggle — untested by us either way.
                   </span>
                 </li>
               </ul>
@@ -205,8 +219,9 @@ export default function NoAbilitiesRunPage() {
                 <li>Highlight-ability ruling (&quot;Sadly it&apos;ll block the achievement, as it&apos;s a magic ability&quot;): developer reply in the official Steam feedback sticky, 25 Aug 2026.</li>
                 <li>Pre-patch failure modes (silent unlocks, lost runs, d-pad binding, force-quit rollback): Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
                 <li>Upgrade-vs-use boundary: the community &quot;No&quot; answer in Steam thread &quot;ability usage?&quot; (28–30 Aug 2026), now developer-confirmed in Steam thread &quot;no magic run for the achievement&quot; (7 Sep 2026) — &quot;you can upgrade whatever you like just don&apos;t use magic&quot;, with the disable toggle recommended against misclicks. The accidental-use loss reported in the 28 Aug thread stands as the warning case.</li>
+                <li>Cat-hint ruling (&quot;no it doesn&apos;t count as an ability, and make sure to toggle disable abilities in the options to make it easier to get&quot;): developer reply in the Steam thread &quot;no abilities achievement&quot;, 17 Sep 2026. This ruling supersedes this page&apos;s earlier conservative guidance to never ask a cat; how the cat menu interacts with the disable-abilities toggle is not tested by us.</li>
                 <li>Controller keybind conflict (solution view sharing a button with a magic ability): negative Steam review, 27 Aug 2026 — single player report, not developer-confirmed; we label it as such and point to the toggle as the guaranteed fix.</li>
-                <li>Petting-vs-asking separation: community reports consistent with Steam achievement text; we label it conservative guidance rather than a datamined rule.</li>
+                <li>Petting safety: community reports consistent with Steam achievement text. Cat hints: developer-confirmed safe per the 17 Sep 2026 ruling above — the earlier &quot;ask nothing of a cat&quot; framing on this page has been retired.</li>
               </ul>
             </section>
           </div>
