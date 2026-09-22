@@ -144,11 +144,14 @@ export default function MissingPotionsPage() {
             <section id="troubleshoot" className="article-section">
               <h2>When respawn is not enough</h2>
               <p>
-                Two rarer failure modes have shown up in the Steam forum since launch. Both have a next step:
+                Three rarer failure modes have shown up in the Steam forum since launch. All have a next step:
               </p>
               <ul className="mistake-list" style={{ listStyle: "none" }}>
                 <li>
                   <strong>Respawn and Unstick both do nothing after a crash.</strong> One player&apos;s game crashed while a controller was being plugged in; after relaunch, five shelf spaces stopped responding and the needed potions sat stuck between shelves. In-game Unstick did nothing, and quitting and reopening was not enough either — <strong>a full restart of the game fixed it</strong>. The loss is bounded: Steam Cloud autosaves roughly every two minutes, per the developer&apos;s FAQ. This is a single player-reported fix, not retested by us.
+                </li>
+                <li>
+                  <strong>After a crash or freeze, the world itself behaves broken.</strong> If the game quit unexpectedly and now a <strong>potion fills a hand slot without a bottle actually being there</strong>, placed bottles <strong>fly across the room</strong> or try to stack two in one shelf slot, or a shelf slot <strong>stops responding while the shelf glows red</strong> as if sorted wrong — that is crash-state corruption, not your sorting. Unstick and the pause-menu respawn may do nothing for this family; the fix players confirm is simply <strong>closing and reopening the game</strong>, and if one restart does not clear it, quit and reopen again — one player needed two. The loss is bounded the same way: Steam Cloud autosaves roughly every two minutes, and one player&apos;s progress even survived the game apparently uninstalling itself plus a full reinstall. Player-reported from two independent 22 Sep 2026 reports, not retested by us.
                 </li>
                 <li>
                   <strong>One specific potion is gone and Assemble will not bring it back.</strong> A 3 Sep 2026 report describes a purple Greek-symbols potion missing from a save — nothing highlighted in the shop, and the <Link href="/help/abilities-and-hints/#assemble">Assemble ability</Link> (which pulls unshelved potions of a set into your hand) did not retrieve it. Two days later the player found the cause: <strong>two potions were occupying the same shelf slot</strong>, and picking up that set&apos;s bottles revealed the missing one underneath — so first lift every potion of the set that looks incomplete. If the bottle still has not appeared, the developer&apos;s standing answer applies: use the <a href="#respawn">pause-menu respawn of all unshelved potions</a> — and do not be put off by its warning. The player nearly skipped that fix after misreading it as deleting progress; respawning only moves loose bottles and potions already shelved stay put.
@@ -169,6 +172,7 @@ export default function MissingPotionsPage() {
                 <li>Hiding spots and the white-cat chess bishop: converging reports in Steam discussion threads (Aug 2026).</li>
                 <li>Week 7/8 flower location and the solved-puzzle hint limit: Steam discussion &quot;Missing flower&quot; (28 Aug 2026), developer and community replies.</li>
                 <li>Crash-stuck shelf slots (full-restart fix) and the Assemble-fail missing-potion report: Steam discussions &quot;Potions stuck between shelves&quot; (1 Sep 2026) and &quot;missing potion&quot; (3 Sep 2026, resolved by its opener on 5 Sep 2026 — the potion shared a shelf slot with another bottle); the two-minute autosave interval is from the developer&apos;s pinned FAQ thread.</li>
+                <li>Crash-state corruption symptoms (phantom hand slot, flying placements, un-interactive slot with a red shelf) and the restart-twice fix: Steam thread &quot;everything broke for a bit&quot; (22 Sep 2026) and an independent Steam review from the same day — player-reported, developer has not yet replied in the thread.</li>
                 <li>The displaced storybook found on the floor among potion piles: Steam thread &quot;Can&apos;t find the second book&quot; (14–15 Sep 2026, community answer, not retested by us).</li>
                 <li>No in-game retest has been done for this article; details are labelled accordingly.</li>
               </ul>
