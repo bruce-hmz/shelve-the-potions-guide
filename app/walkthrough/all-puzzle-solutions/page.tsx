@@ -181,6 +181,9 @@ export default function AllSolutionsPage() {
               <p>
                 If a shelf keeps rejecting a seemingly correct order, re-read the clue object: several boards hide a second attribute (the flower shelf pairs color <em>and</em> leaf count, the storybook shelf hides its numbers in desk books).
               </p>
+              <p>
+                <strong>Puzzle unlocked before you placed the full set?</strong> The opposite of a rejected shelf is a known bug, not a shortcut: one player placed the first 5 potions of an 8-potion set on a shelf sized for a smaller set, and the board counted as complete. The developer acknowledged the report on 24 Sep 2026 (&quot;Thanks for reporting&quot;) — an acknowledgment, not a confirmed fix — so treat it as a reported issue that may be patched in a future update.
+              </p>
             </section>
 
             <PuzzleTable
@@ -248,6 +251,7 @@ export default function AllSolutionsPage() {
                 <li>Compass and runes sequences shown as community leads: public player guides — pending our own verification before they move to guide pages.</li>
                 <li>Completed-shelf check (Tab hold, placement flash, pause screen, 40-shelf ability): Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026). Highlight-blocks-achievement ruling: developer reply in the official feedback sticky (25 Aug 2026). Controller D-pad-up solution reminder: player reply, Steam tips thread (3 Sep 2026). Tab-as-toggle option: developer reply in the same thread (5 Sep 2026).</li>
                 <li>Patch readability change for the card board: official day-one patch notes v1.0.9.</li>
+                <li>Wrong-shelf early unlock (first 5 of an 8-potion set completing a board): player report in the Steam discussion &quot;Bug: placing the first 5 of an 8 potion set unlocks the puzzle&quot; (23 Sep 2026); developer acknowledgment on the same thread, 24 Sep 2026 — no fix confirmed as of v1.0.12.</li>
               </ul>
             </section>
           </div>
