@@ -85,6 +85,14 @@ const faqJsonLd = {
         text: "No — developer-confirmed on 17 Sep 2026 in the Steam 'no abilities achievement' thread: asked whether getting help from the cat counts as an ability, the developer answered, 'no it doesn't count as an ability, and make sure to toggle disable abilities in the options to make it easier to get'. Cat hints are safe on a no-abilities run, so 'Hooman needs help :)' and the no-abilities achievement can be earned on the same save. One untested edge: how the cat menu behaves while the disable-abilities toggle is switched on — keep the toggle on and ask normally; if the menu appears blocked, ask before enabling it.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Does an ability key press that activates nothing void the no-abilities run in Shelve the Potions?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No — developer-confirmed on 27 Sep 2026 in the Steam 'I accidently pressed 2...' thread: asked whether an accidental press of an ability key with hands full — no ability activated, nothing happened — still counts against the run, the developer answered, 'if the ability didn't activate then you should be good'. A press that never activates an ability is not a use; only a real activation ends the run. The developer also recommends disabling the abilities in the options menu (patch v1.0.11) so a mispress cannot activate anything in the first place.",
+      },
+    },
   ],
 };
 
@@ -202,6 +210,12 @@ export default function NoAbilitiesRunPage() {
                     <strong>Does asking a cat for a hint void the no-abilities achievement?</strong> <strong>No.</strong> Asked directly in the Steam &quot;no abilities achievement&quot; thread (17 Sep 2026), the developer answered, &quot;no it doesn&apos;t count as an ability, and make sure to toggle disable abilities in the options to make it easier to get.&quot; Cat hints are safe on this run — and pairing it with <em>&quot;Hooman needs help :)&quot;</em> on one save works (<a href="#setup">step 2</a>). One edge we have not tested: how the cat menu behaves while the disable-abilities toggle is switched on. The sensible play is to keep the toggle on and ask normally; if the menu turns out to be blocked on your build, ask before enabling the toggle — untested by us either way.
                   </span>
                 </li>
+                <li>
+                  <CheckIcon />
+                  <span>
+                    <strong>I pressed an ability key but nothing activated — is the run voided?</strong> <strong>No</strong> — developer-confirmed in the Steam &quot;I accidently pressed 2...&quot; thread (27 Sep 2026): asked whether an accidental press with hands full — no ability came out, no effect — still counts, the developer answered, &quot;if the ability didn&apos;t activate then you should be good.&quot; A no-op press is not a use: only a press that actually fires an ability ends the run, which is what the zero-tolerance warning above (<a href="#faq">first question</a>) describes. For insurance the developer again recommends the <a href="#setup">disable-abilities toggle</a>, so a mispress cannot activate anything at all.
+                  </span>
+                </li>
               </ul>
             </section>
 
@@ -220,6 +234,7 @@ export default function NoAbilitiesRunPage() {
                 <li>Pre-patch failure modes (silent unlocks, lost runs, d-pad binding, force-quit rollback): Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
                 <li>Upgrade-vs-use boundary: the community &quot;No&quot; answer in Steam thread &quot;ability usage?&quot; (28–30 Aug 2026), now developer-confirmed in Steam thread &quot;no magic run for the achievement&quot; (7 Sep 2026) — &quot;you can upgrade whatever you like just don&apos;t use magic&quot;, with the disable toggle recommended against misclicks. The accidental-use loss reported in the 28 Aug thread stands as the warning case.</li>
                 <li>Cat-hint ruling (&quot;no it doesn&apos;t count as an ability, and make sure to toggle disable abilities in the options to make it easier to get&quot;): developer reply in the Steam thread &quot;no abilities achievement&quot;, 17 Sep 2026. This ruling supersedes this page&apos;s earlier conservative guidance to never ask a cat; how the cat menu interacts with the disable-abilities toggle is not tested by us.</li>
+                <li>No-op mispress ruling (&quot;if the ability didn&apos;t activate then you should be good, but just in case disable the abilities in options menu&quot;): developer reply in the Steam thread &quot;I accidently pressed 2...&quot;, 27 Sep 2026. Covers presses that never activated only — a press that actually fires an ability still voids the run.</li>
                 <li>Controller keybind conflict (solution view sharing a button with a magic ability): negative Steam review, 27 Aug 2026 — single player report, not developer-confirmed; we label it as such and point to the toggle as the guaranteed fix.</li>
                 <li>Petting safety: community reports consistent with Steam achievement text. Cat hints: developer-confirmed safe per the 17 Sep 2026 ruling above — the earlier &quot;ask nothing of a cat&quot; framing on this page has been retired.</li>
               </ul>
