@@ -57,10 +57,25 @@ const articleJsonLd = {
   author: { "@type": "Organization", name: site.name },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Shelve the Potions strains my eyes — is there a brightness or desaturation setting?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Not in-game: as of v1.0.12 the game has no brightness, gamma, or desaturation setting. Players in the Steam 'Eye Strain and Migraines' thread (18–28 Sep 2026) work around it by adjusting brightness, gamma, and saturation in their GPU driver's control panel instead — a community suggestion, not a developer recommendation. Two caveats from the same thread: turning brightness down too far makes similarly colored potions harder to decipher, and the colorblind-assist mode adds visual clutter that made one player's eye strain worse. If the discomfort is tied to camera movement rather than static brightness, the developer-advised FOV advice is the relevant fix.",
+      },
+    },
+  ],
+};
+
 export default function SettingsAndComfortPage() {
   return (
     <main id="main-content">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, articleJsonLd]) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, articleJsonLd, faqJsonLd]) }} />
       <article>
         <header className="article-hero">
           <div className="container article-hero__inner">
@@ -85,6 +100,7 @@ export default function SettingsAndComfortPage() {
             <strong>On this page</strong>
             <nav>
               <a href="#motion">Motion sickness: FOV &amp; comfort</a>
+              <a href="#brightness">Eye strain &amp; brightness</a>
               <a href="#zoom">Zoom in on labels and clues</a>
               <a href="#deck">Steam Deck stick sensitivity</a>
               <a href="#performance">Mouse stutter &amp; frame rate</a>
@@ -108,6 +124,25 @@ export default function SettingsAndComfortPage() {
               </p>
               <p className="source-note">
                 Source: Steam discussion on stick sensitivity / motion sickness (active 24–30 Aug 2026) with developer replies, plus an independent 30 Aug Steam review. Comfort responses vary by person; we cannot retest nausea on your behalf.
+              </p>
+            </section>
+
+            <section id="brightness" className="article-section">
+              <p className="article-label">FAQ</p>
+              <h2>The potions are too bright — eye strain fixes (no in-game setting yet)</h2>
+              <p>
+                A Steam thread titled &quot;Eye Strain and Migraines&quot; (started 18 Sep 2026) collects players who get painful eye strain within 15–20 minutes of sorting — the first poster suspects the potions&apos; &quot;almost glowing brightness&quot; — and an independent 28 September Steam review echoes it (&quot;it can strain the eyes a little&quot;). First the honest limit: <strong>as of v1.0.12 the game has no in-game brightness, gamma, or desaturation setting</strong>. What the thread&apos;s answer suggests instead lives outside the game:
+              </p>
+              <ul className="mistake-list" style={{ listStyle: "none" }}>
+                <li><strong>Adjust brightness, gamma, and saturation in your GPU driver&apos;s settings</strong> — the NVIDIA / AMD / Intel control panel, or a desktop right-click into your graphics settings on most systems (the reply points out even integrated graphics have a settings menu these days). This workaround is <strong>community-suggested</strong> (28 Sep 2026 reply in the same thread), not a developer recommendation, and slider names and locations vary by card — we have not retested it.</li>
+                <li><strong>Ease into the change rather than maxing it.</strong> The player who had to &quot;turn down the brightness significantly to play it without too much strain&quot; notes the trade-off: it &quot;made some of the potions hard to decipher later on&quot; — the puzzles ask you to tell similarly colored bottles apart, so a picture that is too dark costs you solution accuracy.</li>
+                <li><strong>Do not lean on the colorblind-assist mode for this.</strong> The thread&apos;s first poster found it smooth but cluttered — extra visual noise that made the eye strain worse, not better.</li>
+              </ul>
+              <p>
+                And if what you feel is tied to camera movement rather than the static brightness of the bottles — swimming or nausea while moving around — that is a different problem with its own answer: see <a href="#motion">the FOV advice above</a>.
+              </p>
+              <p className="source-note">
+                Source: Steam thread &quot;Eye Strain and Migraines&quot; (18–28 Sep 2026, three players) plus an independent 28 Sep 2026 Steam review. No developer reply in the thread as of 29 Sep 2026; the GPU-driver workaround is community-suggested and not retested by us.
               </p>
             </section>
 
@@ -194,6 +229,7 @@ export default function SettingsAndComfortPage() {
               <h2>Where this information comes from</h2>
               <ul className="mistake-list" style={{ listStyle: "none" }}>
                 <li>Motion sickness reports and the developer&apos;s FOV + colorblind-assist suggestion: Steam discussion on stick sensitivity / motion sickness (active 24–30 Aug 2026), developer replies; corroborated by a 30 Aug Steam review citing nausea.</li>
+                <li>Eye strain from the potions&apos; brightness: Steam thread &quot;Eye Strain and Migraines&quot; (18–28 Sep 2026) — the OP&apos;s brightness suspicion and colorblind-clutter caveat, one player&apos;s brightness trade-off, and one player&apos;s GPU-driver workaround suggestion — plus an independent 28 Sep 2026 Steam review. No in-game setting exists as of v1.0.12 and the workaround is not retested by us.</li>
                 <li>Zoom controls (Ctrl / right stick): developer confirmations in two separate Steam threads (24 Aug and 28 Aug 2026).</li>
                 <li>Steam Deck stick sensitivity and the v1.0.12 fix: same 24–30 Aug thread plus official patch notes v1.0.12, &quot;360 Controller Movement&quot; (28 Aug 2026).</li>
                 <li>Mouse stutter / choppiness and the vsync + FPS-cap advice: Steam threads &quot;Mouse Stuttering?&quot; (27 Aug 2026) and &quot;Stuttering/choppiness?&quot; (31 Aug – 1 Sep 2026), both with developer replies; community frame-rate matrix and the 1 Sep &quot;settings don&apos;t fix everyone&quot; report from &quot;Weird mouse behaviour?&quot; (6 Aug – 1 Sep 2026); the 7 Sep 2026 systematic settings test in &quot;Mouse Stuttering?&quot; (no setting fixed the diagonal variant) and a 5 Sep 2026 Steam review from a trackball user.</li>

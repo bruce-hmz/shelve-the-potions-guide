@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "\u201cNo Magical Abilities for Me, Thanks.\u201d — Shelve the Potions! Run Guide",
   description:
-    "How to earn Shelve the Potions' rarest achievement (4.5% unlock rate): the patch v1.0.11 toggle that disables abilities, what counts as an ability, what stays safe, and how to unstick yourself mid-run.",
+    "How to earn Shelve the Potions' rarest achievement (13.9% unlock rate as of 29 Sep 2026): the patch v1.0.11 toggle that disables abilities, what counts as an ability, what stays safe, and how to unstick yourself mid-run.",
   alternates: { canonical: "/help/no-abilities-run/" },
   openGraph: {
     type: "article",
@@ -112,7 +112,7 @@ export default function NoAbilitiesRunPage() {
             <div className="quick-answer">
               <span>Quick answer</span>
               <p>
-                About <strong>4.5%</strong> of players have it. The recipe: enable the <strong>disable-abilities toggle in the options menu</strong> (added in patch v1.0.11), never fire a keybind ability, and solve every shelf from clue reading alone. Asking cats for hints is safe too — the developer confirmed cat help &quot;doesn&apos;t count as an ability&quot; (17 Sep 2026). That is the whole run — the guide below explains why each rule exists.
+                The rarest achievement in the game: about <strong>13.9%</strong> of players had it as of 29 Sep 2026 — a share that has climbed from roughly 4.5% near launch and keeps rising as more players finish runs (Steam re-normalizes its global percentages). The recipe: enable the <strong>disable-abilities toggle in the options menu</strong> (added in patch v1.0.11), never fire a keybind ability, and solve every shelf from clue reading alone. Asking cats for hints is safe too — the developer confirmed cat help &quot;doesn&apos;t count as an ability&quot; (17 Sep 2026). That is the whole run — the guide below explains why each rule exists.
               </p>
             </div>
             <ArticleTrust />
@@ -228,7 +228,7 @@ export default function NoAbilitiesRunPage() {
               <p className="article-label">Evidence</p>
               <h2>Where this information comes from</h2>
               <ul className="mistake-list" style={{ listStyle: "none" }}>
-                <li>Achievement name, unlock rate, and related achievements: Steam Community global stats for app 4928820.</li>
+                <li>Achievement name, unlock rate, and related achievements: Steam Community global stats for app 4928820 — rate read 29 Sep 2026 (13.9%); the figure is volatile and has climbed from roughly 4.5% near launch as more players finish runs.</li>
                 <li>Disable-abilities toggle behaviour and intent: official patch notes v1.0.11 (26 Aug 2026).</li>
                 <li>Highlight-ability ruling (&quot;Sadly it&apos;ll block the achievement, as it&apos;s a magic ability&quot;): developer reply in the official Steam feedback sticky, 25 Aug 2026.</li>
                 <li>Pre-patch failure modes (silent unlocks, lost runs, d-pad binding, force-quit rollback): Steam discussion thread &quot;I wish there to be a lock for abilities&quot;.</li>
