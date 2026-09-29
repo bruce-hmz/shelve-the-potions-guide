@@ -146,7 +146,7 @@ export default function FirstRoomPage() {
               <ul className="check-list">
                 <li><CheckIcon /><span><strong>No timer, no fail state.</strong> You cannot lose the game by experimenting or placing wrongly.</span></li>
                 <li><CheckIcon /><span><strong>The game autosaves every 2 minutes</strong> and supports Steam Cloud, per the developer&apos;s FAQ.</span></li>
-                <li><CheckIcon /><span><strong>Finishing the tutorial is an achievement.</strong> <em>&quot;Welcome, Apprentice&quot;</em> unlocks for completing it — about 97% of Steam players have it.</span></li>
+                <li><CheckIcon /><span><strong>Finishing the tutorial is an achievement.</strong> <em>&quot;Welcome, Apprentice&quot;</em> unlocks for completing it — nearly every Steam player has it.</span></li>
                 <li><CheckIcon /><span><strong>Abilities unlock as you fill shelves</strong>, sometimes quietly. If you plan to attempt the no-abilities achievement, patch v1.0.11 adds a toggle to switch them off — see the <Link href="/help/abilities-and-hints/">abilities guide</Link>.</span></li>
               </ul>
             </section>

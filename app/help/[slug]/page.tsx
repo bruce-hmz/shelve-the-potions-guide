@@ -133,7 +133,7 @@ export default async function HelpPage({ params }: PageProps) {
                     Shelve the Potions! has <strong>24 achievements</strong> on Steam. Most of them track natural progress: finish the tutorial, hit shelf-count milestones, clear every named board, and pet all ten magical cats. Only one —{" "}
                     <em>&quot;No magical abilities for me, thanks.&quot;</em> — requires a deliberate playstyle change. Every name below is quoted exactly as it appears on Steam.
                   </p>
-                  <p className="source-note">Source: Steam Community global achievement stats for appid 4928820, checked {site.researchedAtLabel}.</p>
+                  <p className="source-note">Source: Steam Community global achievement stats for appid 4928820, checked {site.researchedAtLabel}; unlock percentages re-verified against Steam&apos;s API on 30 Sep 2026.</p>
                 </>
               ) : (
                 <>
@@ -163,22 +163,22 @@ export default async function HelpPage({ params }: PageProps) {
                         <tr><td>&quot;How long has it been&quot;</td><td>Complete 100 shelves.</td></tr>
                         <tr><td>&quot;I&apos;m going to feel my lower back tomorrow&quot;</td><td>Complete 150 shelves.</td></tr>
                         <tr><td>&quot;Almost there&quot;</td><td>Complete 200 shelves.</td></tr>
-                        <tr><td>&quot;Ah, finally&quot;</td><td>Complete all shelves. Global unlock rate is about 17.7%, making this one of the rarest achievements in the list.</td></tr>
+                        <tr><td>&quot;Ah, finally&quot;</td><td>Complete all shelves. Mid-pack these days: about 44% of players had unlocked it as of 30 Sep 2026, and only three achievements are rarer — the no-abilities run, &quot;Hooman needs help :)&quot; and &quot;Cat lady&quot;.</td></tr>
                       </tbody>
                     </table>
                   </div>
                 </section>
                 <section id="puzzle-achievements" className="article-section">
                   <h2>Puzzle achievements</h2>
-                  <p>Four achievements track how many unique puzzle orders you have solved. Steam&apos;s global stats show roughly half of players clear all ten.</p>
+                  <p>Four achievements track how many unique puzzle orders you have solved. Steam&apos;s global stats show most players clear all ten.</p>
                   <div className="table-scroll">
                     <table>
                       <thead><tr><th>Achievement</th><th>Requirement</th></tr></thead>
                       <tbody>
-                        <tr><td>&quot;First Discovery&quot;</td><td>Solve your first puzzle order. About 99.3% of players have this.</td></tr>
-                        <tr><td>&quot;Puzzle Solver&quot;</td><td>Solve 5 unique puzzle orders. About 81.8% unlock rate.</td></tr>
-                        <tr><td>&quot;I can see the patterns&quot;</td><td>Unlock 10 puzzle solutions. About 74.7% unlock rate.</td></tr>
-                        <tr><td>&quot;I can see through the matrix&quot;</td><td>Unlock every puzzle solution. About 42% unlock rate — the game has more than ten orders, so this takes longer than the previous one.</td></tr>
+                        <tr><td>&quot;First Discovery&quot;</td><td>Solve your first puzzle order. Nearly every player has this.</td></tr>
+                        <tr><td>&quot;Puzzle Solver&quot;</td><td>Solve 5 unique puzzle orders. The vast majority of players unlock it.</td></tr>
+                        <tr><td>&quot;I can see the patterns&quot;</td><td>Unlock 10 puzzle solutions. Most players unlock it.</td></tr>
+                        <tr><td>&quot;I can see through the matrix&quot;</td><td>Unlock every puzzle solution. Well over half of players have this — the game has more than ten orders, so it takes longer than the previous one.</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -190,7 +190,7 @@ export default async function HelpPage({ params }: PageProps) {
                     <table>
                       <thead><tr><th>Achievement</th><th>Which board</th></tr></thead>
                       <tbody>
-                        <tr><td>&quot;Spicy&quot;</td><td>Complete the Spices Table. About 98.9% unlock rate — usually the very first board most players clear.</td></tr>
+                        <tr><td>&quot;Spicy&quot;</td><td>Complete the Spices Table. Nearly every player has it — usually the very first board most players clear.</td></tr>
                         <tr><td>&quot;Restocking Board&quot;</td><td>Complete the ingredients board.</td></tr>
                         <tr><td>&quot;BEST STORY EVER!&quot;</td><td>Complete the Hero chronicles.</td></tr>
                         <tr><td>&quot;Proud Grandfather&quot;</td><td>Complete the clock.</td></tr>
@@ -208,9 +208,9 @@ export default async function HelpPage({ params }: PageProps) {
                       <thead><tr><th>Achievement</th><th>Requirement</th></tr></thead>
                       <tbody>
                         <tr><td>&quot;Curious Cat&quot;</td><td>Pet your first cat.</td></tr>
-                        <tr><td>&quot;Cat lady&quot;</td><td>Pet all 10 magical cats. About 35.3% unlock rate.</td></tr>
+                        <tr><td>&quot;Cat lady&quot;</td><td>Pet all 10 magical cats. Under half of players have it.</td></tr>
                         <tr><td>&quot;Hooman needs help :)&quot;</td><td>Use a cat hint for the first time — but the option only appears under conditions that trip a lot of players up. See the section below.</td></tr>
-                        <tr><td>&quot;Welcome, Apprentice&quot;</td><td>Finish the tutorial. About 97% of players have this.</td></tr>
+                        <tr><td>&quot;Welcome, Apprentice&quot;</td><td>Finish the tutorial. Nearly every player has this.</td></tr>
                         <tr><td>&quot;Hello improvements.&quot;</td><td>Buy your first upgrade.</td></tr>
                         <tr><td>&quot;I need all the help I can get ok!&quot;</td><td>Buy all the upgrades.</td></tr>
                       </tbody>
@@ -221,7 +221,7 @@ export default async function HelpPage({ params }: PageProps) {
                   <p className="article-label">The finicky one</p>
                   <h2>&quot;Cat lady&quot; — petting all 10 magical cats</h2>
                   <p>
-                    About 35% of players have <em>&quot;Cat lady&quot;</em> (pet all 10 magical cats), and the two most common failures are both covered by developer replies in the Steam &quot;Catlady achievement&quot; thread (29–31 Aug 2026). First, the pet itself: <strong>petting means moving the cursor over a cat and holding it there — a single click does not count</strong>. The developer spelled the method out verbatim after one player counted ten pets with no achievement: &quot;you need to pet them, move and hold the mouse over the cats.&quot;
+                    About 42% of players had <em>&quot;Cat lady&quot;</em> (pet all 10 magical cats) as of 30 Sep 2026, and the two most common failures are both covered by developer replies in the Steam &quot;Catlady achievement&quot; thread (29–31 Aug 2026). First, the pet itself: <strong>petting means moving the cursor over a cat and holding it there — a single click does not count</strong>. The developer spelled the method out verbatim after one player counted ten pets with no achievement: &quot;you need to pet them, move and hold the mouse over the cats.&quot;
                   </p>
                   <p>
                     Second, the commonly missed cat: <strong>Sir Meowsir sits on a barrel in front of the fireplace</strong> — the developer&apos;s answer to the player who could not find the tenth cat on a second, no-magic playthrough. If the achievement still does not pop after a recount, redo the sweep using the hover-and-hold method rather than clicking; the counted-ten-but-nothing-happened report in the same thread was resolved by exactly that distinction. The method is community-verified, not retested by us in-game.
@@ -353,7 +353,7 @@ export default async function HelpPage({ params }: PageProps) {
                     The cat menu itself has no stated cost or penalty, and the game has no timer pressure anywhere. The keybind abilities are different: the official v1.0.10 patch notes confirm that the highlight and Assemble abilities run on a cooldown, and that a newly added upgrade level lowers it to 40 seconds.
                   </p>
                   <p>
-                    Steam&apos;s global stats show about <strong>29.5%</strong> of players use a hint at least once (<em>&quot;Hooman needs help :)&quot;</em>), well below the completion rate of most board achievements — most players either solve without hints or do not realise the system exists.
+                    Steam&apos;s global stats show about <strong>40%</strong> of players use a hint at least once (<em>&quot;Hooman needs help :)&quot;</em>, as of 30 Sep 2026) — lower than every shelf milestone and every named board, which fits: most players either solve without hints or do not realise the system exists.
                   </p>
                 </section>
 
