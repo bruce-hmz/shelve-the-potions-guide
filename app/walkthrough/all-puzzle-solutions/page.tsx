@@ -168,6 +168,7 @@ export default function AllSolutionsPage() {
               <a href="#sequence">Follow the sequence</a>
               <a href="#pattern">Copy the pattern</a>
               <a href="#checking">Checking what is already done</a>
+              <a href="#clue-items">Where the clue items hide</a>
               <a href="#method">How we publish answers</a>
             </nav>
           </aside>
@@ -223,6 +224,25 @@ export default function AllSolutionsPage() {
               </p>
               <p className="source-note">
                 Source: Steam discussion &quot;Completed shelf?&quot; (30 Aug 2026, six participants). Community-verified methods; we have not retested them in-game. The ruling that the highlight voids the no-abilities achievement is developer-confirmed: official feedback sticky, 25 Aug 2026. The controller D-pad-up solution reminder: player reply in the Steam tips thread &quot;Quick tip for sequences&quot;, 3 Sep 2026. The Tab toggle option: developer reply in the same tips thread, 5 Sep 2026.
+              </p>
+            </section>
+
+            <section id="clue-items" className="article-section">
+              <h2>Where the clue items hide</h2>
+              <p>
+                A rejected shelf with a correct-looking order usually means the clue object is still missing. The room&apos;s hiding spots follow patterns, and this index collects the ones the community has confirmed so far — it grows as more are verified:
+              </p>
+              <ul className="mistake-list" style={{ listStyle: "none" }}>
+                <li><strong>Chess pieces: behind and around the white cat</strong> just past the tutorial-room exit. Four separate players have now confirmed the white bishop in particular — it sits on the work bench next to the potted rainbow plant, and the cat&apos;s model covers most of it on mouseover (<Link href="/puzzles/chess-pieces/">full chess walkthrough</Link>).</li>
+                <li><strong>Missing clock hands: leaning against one of the room&apos;s columns.</strong> Developer-confirmed in two separate threads (26 and 29 Aug 2026) after players came up empty searching the shelves upright (<Link href="/puzzles/clock-puzzle/">clock puzzle page</Link>).</li>
+                <li><strong>Storybooks and other displaced clue objects: check the floor.</strong> The rune shelf&apos;s storybooks normally sit on the desk behind the working area, but a displaced book can end up on the floor mixed in with potion piles (player-reported, 15 Sep 2026 — <Link href="/puzzles/runes-books/">storybook rune page</Link>).</li>
+                <li><strong>Acorn paper: direction known, spot not pinned.</strong> The only account on record walked the aisles searching every crevice before realizing they &quot;just had to turn around&quot; (13 Sep 2026) — a single player report, so treat the direction as the current best knowledge rather than a verified location. If you find the precise spot, the feedback sticky and the game&apos;s Discord are the places to report it.</li>
+              </ul>
+              <p>
+                The universal finder that beats all of these: pick up a potion from the set you are stuck on and <strong>ask a cat for a hint</strong> — the cat marks a highlight path to the items its board still needs, on any unsolved board. Asking a cat does <strong>not</strong> count as using an ability (developer-confirmed 17 Sep 2026), so it is safe on a <Link href="/help/no-abilities-run/">no-abilities run</Link> too; the full rules live in the <Link href="/help/abilities-and-hints/">abilities and hints guide</Link>.
+              </p>
+              <p className="source-note">
+                Source: the chess threads&apos; converging bishop answers (Aug–Oct 2026, four independent players); the developer&apos;s clock-hand replies (26 + 29 Aug 2026); the storybook floor answer (15 Sep 2026); the acorn-paper account (13 Sep 2026, single report, unverified). Cat-hint behaviour and the not-an-ability ruling per the developer&apos;s 17 Sep 2026 answer.
               </p>
             </section>
 

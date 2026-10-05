@@ -108,6 +108,9 @@ export default function FirstRoomPage() {
                 The practical habit: after every task you complete, look back at the checklist. If it has grown, the game has quietly given you your next step. Finishing the listed objectives is what ends the tutorial — there is no separate exit puzzle to solve, which is exactly why the room confuses people. The door out of the first room only opens once <strong>every checklist item is done</strong>: the player who started the &quot;How do you get out of the first room?&quot; thread had shelved every rack and still could not leave, for precisely this reason.
               </p>
               <p>
+                <strong>Shelved everything but the tutorial won&apos;t end?</strong> Read the <strong>completed-shelves counter in the upper-left corner</strong> — that is the developer&apos;s own diagnostic: <em>&quot;Is the number of completed shelves in the upper left corner 12? If not, you have a few shelves wrong&quot;</em> (Steam thread &quot;Help, I&apos;m stuck in the tutorial.&quot;, 4 Oct 2026). A counter below 12 means at least one shelf is not actually correct even if it looks finished — one player in the same thread suspected the crow-puzzle shelf was the one refusing to register (player suspicion, unconfirmed). If the counter does read 12 and you are still stuck, the developer asks players to reach out on the game&apos;s Discord server so the save file can be checked. If the checklist and the counter never render on screen at all, that is the separate fault covered in the paragraph below.
+              </p>
+              <p>
                 <strong>Can&apos;t see the checklist at all?</strong> Two rarer causes are on record. If no list renders on the left side of the screen even with the HUD on, you are not imagining it — &quot;What checklist? I don&apos;t see any check lists on my screen,&quot; the launch-era reporter replied when the developer pointed them at it — and starting a <strong>new game</strong> fixed it: the checklist appeared after the reset (player-reported fix from the same thread, not a developer-confirmed one). And if you switched the HUD off in the options menu, switch it back on: hiding the HUD also hides the tutorial prompts, which is what left one player stuck on the zoom-then-drop-potion step in a 7 September review.
               </p>
             </section>
@@ -164,6 +167,7 @@ export default function FirstRoomPage() {
                 <li>Potion respawning, cat hints, autosave interval, and Steam Cloud: pinned developer FAQ and official store copy, app 4928820.</li>
                 <li>White chess bishop behind the white cat: multiple converging Steam discussion posts.</li>
                 <li>Invisible-checklist troubleshooting: launch-era thread &quot;How do you get out of the first room?&quot; (Aug 2026, developer reply plus the player-reported new-game fix) and a 7 Sep 2026 Steam review describing the hidden-HUD variant.</li>
+                <li>Tutorial-exit counter diagnostic: developer reply in the Steam thread &quot;Help, I&apos;m stuck in the tutorial.&quot; (4 Oct 2026) — the completed-shelves counter must read 12, with Discord save-check escalation if it does and the door still won&apos;t open. The crow-puzzle suspicion in the same thread is a player comment, unconfirmed.</li>
                 <li>We have not retested the tutorial room in-game; details are labelled accordingly and will be refined after a first-hand pass.</li>
               </ul>
             </section>
