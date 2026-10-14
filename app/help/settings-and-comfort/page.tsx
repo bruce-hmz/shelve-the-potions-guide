@@ -105,6 +105,7 @@ export default function SettingsAndComfortPage() {
               <a href="#deck">Steam Deck stick sensitivity</a>
               <a href="#performance">Mouse stutter &amp; frame rate</a>
               <a href="#rebind">The A-button rebind bug</a>
+              <a href="#abilities-toggle">Achievement warning: the disable-abilities toggle</a>
               <a href="#panel">The small solution panel</a>
             </nav>
           </aside>
@@ -209,6 +210,20 @@ export default function SettingsAndComfortPage() {
               </p>
             </section>
 
+            <section id="abilities-toggle" className="article-section article-callout">
+              <p className="article-label">Achievement warning</p>
+              <h2>Going for the no-abilities achievement? Flip the disable-abilities toggle first</h2>
+              <p>
+                The options menu hides the setting that matters most for the game&apos;s rarest achievement. Since patch v1.0.11 a toggle there disables the magic abilities outright — the developer&apos;s patch note says it exists &quot;to easily get the last achievement&quot;. The stakes are absolute: <strong>one accidental ability activation permanently voids a no-abilities run</strong>, autosave makes it stick, and seven players have now described the same arc on Steam — an ability key mispressed mid-game, hours of work gone, and the toggle discovered only afterwards.
+              </p>
+              <p>
+                The two recurring mispress patterns are worth knowing before they happen to you: on keyboard the ability keys default to <strong>1-2-3</strong>, directly adjacent to <strong>Tab</strong>, which you press constantly to view a board&apos;s solution; on Steam Deck the <strong>d-pad down button is hard-wired to two actions at once</strong> — the shelf highlight and the solution display (<Link href="/help/abilities-and-hints/#steam-deck">remap workaround in our abilities guide</Link>).
+              </p>
+              <p>
+                Two precision notes from the developer&apos;s own rulings: a press that never actually activates an ability does <strong>not</strong> void the run (&quot;if the ability didn&apos;t activate then you should be good&quot;, 27 Sep 2026), but a real activation has no undo. If a run is on the line, flip the toggle <strong>before you start</strong> — that is the entire defence. The full run plan lives in our <Link href="/help/no-abilities-run/">no-abilities run guide</Link>.
+              </p>
+            </section>
+
             <section id="panel" className="article-section">
               <h2>The solution panel is too small — what helps today</h2>
               <p>
@@ -235,6 +250,7 @@ export default function SettingsAndComfortPage() {
                 <li>Mouse stutter / choppiness and the vsync + FPS-cap advice: Steam threads &quot;Mouse Stuttering?&quot; (27 Aug 2026) and &quot;Stuttering/choppiness?&quot; (31 Aug – 1 Sep 2026), both with developer replies; community frame-rate matrix and the 1 Sep &quot;settings don&apos;t fix everyone&quot; report from &quot;Weird mouse behaviour?&quot; (6 Aug – 1 Sep 2026); the 7 Sep 2026 systematic settings test in &quot;Mouse Stuttering?&quot; (no setting fixed the diagonal variant) and a 5 Sep 2026 Steam review from a trackball user.</li>
                 <li>Crash on alt-tab / window unfocus: Steam thread &quot;Game Crashes on alt tab or unfocus window&quot; (4–6 Sep 2026), developer diagnostic — known issues on Windows 10 builds below 21H1, player log requested via Discord. Single known report.</li>
                 <li>A-button rebind lock-out and the reset-defaults workaround: Steam discussion (30 Aug 2026), developer reply.</li>
+                <li>The disable-abilities toggle warning: official patch notes v1.0.11 (26 Aug 2026) plus seven accidental-activation reports across Steam threads and reviews (25 Aug – 14 Oct 2026); the no-op clarification is the developer&apos;s 27 Sep 2026 reply in the Steam thread &quot;I accidently pressed 2...&quot;. The run rules themselves are documented in our no-abilities run guide.</li>
                 <li>Small solution panel reports: Steam discussion (30 Aug 2026, flower/leaf variant); earlier card-board readability change: official patch notes v1.0.9.</li>
                 <li>No in-game retest has been done for this article; settings guidance is labelled with its source and will be updated after patches.</li>
               </ul>
